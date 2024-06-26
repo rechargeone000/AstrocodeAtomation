@@ -37,6 +37,7 @@ public class BaseTestclass {
 	// public static ExtentReports extent = new ExtentReports();
 	// public static ExtentSparkReporter spark = new
 	// ExtentSparkReporter("spark.html");
+	//commited
 	public static WebDriver driver;
 
 	public Properties prop;
