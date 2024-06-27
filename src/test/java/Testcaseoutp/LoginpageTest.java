@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -17,6 +18,7 @@ import manageUtils.Log;
 import manageUtils.ReadExcel;
 
 public class LoginpageTest extends BaseTestclass {
+
 
 	LoginPage lp;
 	String ExcelFilePath = "C:\\Users\\dell\\eclipse-workspace\\Asttrokautomation\\src\\test\\resources\\data.xlsx";
@@ -38,63 +40,64 @@ public class LoginpageTest extends BaseTestclass {
 	public void loginTestmethod()
 			throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
 		lp = new LoginPage();
-		System.out.println("lodconf runned for login");
-
-		// extent.createTest("loginTestcases");
-		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-
-		// String valid = ReadExcel.readExcelCell(1, 3);
 
 		lp.logincase(prop.getProperty("username"), prop.getProperty("password"));
-		driver.findElement(By.xpath("//span[normalize-space()='Log out']")).click();
+		// lp.userlogout();
+		lp.getstudentnametext();
+		String email = lp.clickonseting();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 
 		String no = ReadExcel.readExcelCell(1, 0);
 		String testcasename = ReadExcel.readExcelCell(1, 1);
 		String Testdescription = ReadExcel.readExcelCell(1, 2);
 		String valid = ReadExcel.readExcelCell(1, 3);
-		System.out.println("valid value is showing " + valid);
-		if (valid.equalsIgnoreCase("valid")) {
-			System.out.println("entered into the if ");
+		ReadExcel rc = new ReadExcel();
 
-			ReadExcel rc = new ReadExcel();
+		if (true) {
+			System.out.println(email);
+			Assert.assertEquals(email, prop.getProperty("username"));
 			rc.startTestcase(testcasename, no, 1, Testdescription, "pass", "none");
 
 		} else {
-			Thread.sleep(4000);
-			driver.findElement(lp.homelink).click();
 
-			driver.findElement(lp.navbtnl).click();
-
-			ReadExcel.readExcelCell(0, 0);
-			ReadExcel rc = new ReadExcel();
-
-			rc.startTestcase(testcasename, no, 1, " logged  in", "fail", "user");
+			rc.startTestcase(testcasename, no, 1, Testdescription, "fail", "user is diffrent");
 
 		}
 
 	}
 
 	@Test(priority = 2)
-	public void loginforAdmintest() throws IOException {
-
-		System.out.println("loginforAdmintest");
-		manageUtils.Log.startTestCase("loginTest started");
-
+	public void loginTestmethodinvalid()
+			throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
 		lp = new LoginPage();
-		try {
-			ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		} catch (EncryptedDocumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InvalidFormatException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		lp.logincase(prop.getProperty("invalidusername"), prop.getProperty("inavalidpass"));
+		// lp.userlogout();
+		String no = ReadExcel.readExcelCell(1, 0);
+		String testcasename = ReadExcel.readExcelCell(1, 1);
+		String Testdescription = ReadExcel.readExcelCell(1, 2);
+		String valid = ReadExcel.readExcelCell(1, 3);
+		ReadExcel rc = new ReadExcel();
+
+		if (true) {
+			String errortext = driver.findElement(By.xpath("//div[@class='invalid-feedback']")).getText();
+			Assert.assertEquals(errortext, "The password or username is incorrect");
+			rc.startTestcase(testcasename, no, 2, Testdescription, "pass", "withinvalid");
+
+		} else {
+
+			rc.startTestcase(testcasename, no, 2, Testdescription, "fail", "withinvalid");
+
 		}
 
-		// String valid = ReadExcel.readExcelCell(1, 3);
+	}
 
-		manageUtils.Log.info("clicked on the login button");
-		manageUtils.Log.info("Login is Sucess for admin");
+	// @Test(priority = 3)
+	public void loginforAdmintest() throws IOException, EncryptedDocumentException, InvalidFormatException {
+
+		lp = new LoginPage();
 
 		try {
 			// lp.logincase("balmukund.sahu@rechargestudio.com","123456");
@@ -116,33 +119,25 @@ public class LoginpageTest extends BaseTestclass {
 			}
 
 		}
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 
-		String no = ReadExcel.readExcelCell(2, 0);
-		String testcasename = ReadExcel.readExcelCell(2, 1);
-		String result = ReadExcel.readExcelCell(2, 2);
-		String valid = ReadExcel.readExcelCell(2, 3);
+		String no = ReadExcel.readExcelCell(3, 0);
+		String testcasename = ReadExcel.readExcelCell(3, 1);
+		String result = ReadExcel.readExcelCell(3, 2);
+		String valid = ReadExcel.readExcelCell(3, 3);
 		ReadExcel rc = new ReadExcel();
 
 		if (valid.equalsIgnoreCase("admin"))
 
 		{
 
-			rc.startTestcase(testcasename, no, 2, "admin is  logged  in", "pass", "admin");
-			System.out.println("trying to click on the admin");
-			// By adlogout = By.xpath("//span[normalize-space()='Logout']");
-			// CommonHelp.clickOnElement_JS(adlogout);
+			rc.startTestcase(testcasename, no, 3, "admin is  logged  in", "pass", "admin");
 
 		} else {
 
-			rc.startTestcase(testcasename, "4", 2, "user should not be logged in", "fail", "admin");
+			rc.startTestcase(testcasename, "4", 3, "user should not be logged in", "fail", "admin");
 
 		}
-
-	}
-
-	public void getdata() {
-		ConvertEx bc = new ConvertEx();
-		bc.Genratepdf();
 
 	}
 

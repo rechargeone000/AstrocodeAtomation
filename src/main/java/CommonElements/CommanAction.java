@@ -15,6 +15,7 @@ import baseclass.BaseTestclass;
 
 public class CommanAction  extends CommonHelp {
 	static Actions act = new Actions(driver);
+	
 
 	// Function to Double click on Element
 	public void doubleClick(By locator) {

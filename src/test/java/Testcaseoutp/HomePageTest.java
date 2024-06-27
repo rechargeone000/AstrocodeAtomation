@@ -132,7 +132,7 @@ public class HomePageTest extends BaseTestclass {
 		setup();
 
 		System.out.println("Testcase is started");
-		hm.viewallbtnAstro();
+		hm.clickonviewallastrbtn();
 		try {
 			ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 		} catch (EncryptedDocumentException e) {
@@ -247,12 +247,7 @@ public class HomePageTest extends BaseTestclass {
 		String Testcasename = ReadExcel.readExcelCell(13, 1);
 		String Testcasedescription = ReadExcel.readExcelCell(13, 2);
 		String TestCaseresult = ReadExcel.readExcelCell(13, 3);
-		try {
-			rc.startTestcase(Testcasename, "13", 13, "description", "pass", "comment");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		rc.startTestcase(Testcasename, "13", 13, "description", "pass", "comment");
 
 	}
 

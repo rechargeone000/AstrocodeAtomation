@@ -46,7 +46,6 @@ public class BaseTestclass {
 	@BeforeSuite
 	public void beforessuit() {
 		Extentmanagerr.setExtent();
-		System.out.println("method");
 		DOMConfigurator.configure("log4j.xml");
 
 	
