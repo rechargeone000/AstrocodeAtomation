@@ -16,12 +16,12 @@ import PageObject.LoginPage;
 import baseclass.BaseTestclass;
 import manageUtils.ReadExcel;
 
-public class HomePageTest extends BaseTestclass {
+public class HomePageTestttttttttttttttttttt extends BaseTestclass {
 
 	HomePaget hm;
 	LoginPage lp;
 
-	String ExcelFilePath = "C:\\Users\\dell\\eclipse-workspace\\Asttrokautomation\\src\\test\\resources\\data.xlsx";
+	String ExcelFilePath = System.getProperty("user.dir")+"\\src\\test\\resources\\data.xlsx";
 
 	@Test(priority = 3)
 	public void Logoicondesplayed()

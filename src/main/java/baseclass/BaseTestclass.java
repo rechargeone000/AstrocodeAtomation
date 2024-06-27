@@ -55,9 +55,9 @@ public class BaseTestclass {
 	public void dataconfig() {
 		
 		try {
+			System.out.println(System.getProperty("user.dir") + "\\Configuration\\config.properties");
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					System.getProperty("user.dir") + "\\Configuration\\config.properties");
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "\\Configuration\\config.properties");
 			prop.load(ip);
 
 		} catch (FileNotFoundException e) {

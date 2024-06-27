@@ -2,64 +2,64 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-22T18:34:00 IST" name="Default suite" finished-at="2024-06-22T18:35:57 IST" duration-ms="117569">
+  <suite started-at="2024-06-27T18:56:30 IST" name="Default suite" finished-at="2024-06-27T18:57:09 IST" duration-ms="39333">
     <groups>
     </groups>
-    <test started-at="2024-06-22T18:34:00 IST" name="Default test" finished-at="2024-06-22T18:35:57 IST" duration-ms="117569">
-      <class name="Testcaseoutp.consultationPageTest">
-        <test-method is-config="true" signature="beforessuit()[pri:0, instance:Testcaseoutp.consultationPageTest@3fc2959f]" started-at="2024-06-22T18:33:59 IST" name="beforessuit" finished-at="2024-06-22T18:34:00 IST" duration-ms="781" status="PASS">
+    <test started-at="2024-06-27T18:56:30 IST" name="Default test" finished-at="2024-06-27T18:57:09 IST" duration-ms="39333">
+      <class name="Testcaseoutp.HomePagetests">
+        <test-method is-config="true" signature="beforessuit()[pri:0, instance:Testcaseoutp.HomePagetests@10683d9d]" started-at="2024-06-27T18:56:29 IST" name="beforessuit" finished-at="2024-06-27T18:56:30 IST" duration-ms="863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforessuit -->
-        <test-method is-config="true" signature="dataconfig()[pri:0, instance:Testcaseoutp.consultationPageTest@3fc2959f]" started-at="2024-06-22T18:34:00 IST" name="dataconfig" finished-at="2024-06-22T18:34:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="dataconfig()[pri:0, instance:Testcaseoutp.HomePagetests@10683d9d]" started-at="2024-06-27T18:56:30 IST" name="dataconfig" finished-at="2024-06-27T18:56:30 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataconfig -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.consultationPageTest@3fc2959f]" started-at="2024-06-22T18:34:00 IST" name="launchbrowser" finished-at="2024-06-22T18:34:24 IST" duration-ms="24458" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.HomePagetests@10683d9d]" started-at="2024-06-27T18:56:30 IST" name="launchbrowser" finished-at="2024-06-27T18:56:43 IST" duration-ms="13046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="consultationAstrolisttest()[pri:32, instance:Testcaseoutp.consultationPageTest@3fc2959f]" started-at="2024-06-22T18:34:24 IST" name="consultationAstrolisttest" finished-at="2024-06-22T18:34:42 IST" duration-ms="17523" status="PASS">
+        <test-method signature="Logoicondesplayed()[pri:4, instance:Testcaseoutp.HomePagetests@10683d9d]" started-at="2024-06-27T18:56:43 IST" name="Logoicondesplayed" finished-at="2024-06-27T18:56:45 IST" duration-ms="1850" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- consultationAstrolisttest -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.consultationPageTest@3fc2959f]" started-at="2024-06-22T18:34:42 IST" name="quitbrowser" finished-at="2024-06-22T18:34:42 IST" duration-ms="406" status="PASS">
+        </test-method> <!-- Logoicondesplayed -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.HomePagetests@10683d9d]" started-at="2024-06-27T18:56:45 IST" name="quitbrowser" finished-at="2024-06-27T18:56:45 IST" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.consultationPageTest@3fc2959f]" started-at="2024-06-22T18:34:42 IST" name="launchbrowser" finished-at="2024-06-22T18:34:52 IST" duration-ms="9536" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.HomePagetests@10683d9d]" started-at="2024-06-27T18:56:45 IST" name="launchbrowser" finished-at="2024-06-27T18:56:49 IST" duration-ms="3630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="bookConsultation()[pri:33, instance:Testcaseoutp.consultationPageTest@3fc2959f]" started-at="2024-06-22T18:34:52 IST" name="bookConsultation" finished-at="2024-06-22T18:35:09 IST" duration-ms="17256" status="PASS">
+        <test-method signature="OnlineCunsultation()[pri:5, instance:Testcaseoutp.HomePagetests@10683d9d]" started-at="2024-06-27T18:56:49 IST" name="OnlineCunsultation" finished-at="2024-06-27T18:56:57 IST" duration-ms="8688" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookConsultation -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.consultationPageTest@3fc2959f]" started-at="2024-06-22T18:35:09 IST" name="quitbrowser" finished-at="2024-06-22T18:35:09 IST" duration-ms="391" status="PASS">
+        </test-method> <!-- OnlineCunsultation -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.HomePagetests@10683d9d]" started-at="2024-06-27T18:56:57 IST" name="quitbrowser" finished-at="2024-06-27T18:56:58 IST" duration-ms="517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.consultationPageTest@3fc2959f]" started-at="2024-06-22T18:35:09 IST" name="launchbrowser" finished-at="2024-06-22T18:35:13 IST" duration-ms="3465" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.HomePagetests@10683d9d]" started-at="2024-06-27T18:56:58 IST" name="launchbrowser" finished-at="2024-06-27T18:57:04 IST" duration-ms="6414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="select()[pri:33, instance:Testcaseoutp.consultationPageTest@3fc2959f]" started-at="2024-06-22T18:35:13 IST" name="select" finished-at="2024-06-22T18:35:57 IST" duration-ms="44063" status="PASS">
+        <test-method signature="personalizedreport()[pri:6, instance:Testcaseoutp.HomePagetests@10683d9d]" started-at="2024-06-27T18:57:04 IST" name="personalizedreport" finished-at="2024-06-27T18:57:09 IST" duration-ms="4528" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- select -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.consultationPageTest@3fc2959f]" started-at="2024-06-22T18:35:57 IST" name="quitbrowser" finished-at="2024-06-22T18:35:57 IST" duration-ms="394" status="PASS">
+        </test-method> <!-- personalizedreport -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.HomePagetests@10683d9d]" started-at="2024-06-27T18:57:09 IST" name="quitbrowser" finished-at="2024-06-27T18:57:09 IST" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="aftsetup()[pri:0, instance:Testcaseoutp.consultationPageTest@3fc2959f]" started-at="2024-06-22T18:35:57 IST" name="aftsetup" finished-at="2024-06-22T18:35:57 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="aftsetup()[pri:0, instance:Testcaseoutp.HomePagetests@10683d9d]" started-at="2024-06-27T18:57:09 IST" name="aftsetup" finished-at="2024-06-27T18:57:09 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftsetup -->
-        <test-method is-config="true" signature="afterlast()[pri:0, instance:Testcaseoutp.consultationPageTest@3fc2959f]" started-at="2024-06-22T18:35:57 IST" name="afterlast" finished-at="2024-06-22T18:35:58 IST" duration-ms="560" status="PASS">
+        <test-method is-config="true" signature="afterlast()[pri:0, instance:Testcaseoutp.HomePagetests@10683d9d]" started-at="2024-06-27T18:57:09 IST" name="afterlast" finished-at="2024-06-27T18:57:10 IST" duration-ms="697" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterlast -->
-      </class> <!-- Testcaseoutp.consultationPageTest -->
+      </class> <!-- Testcaseoutp.HomePagetests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

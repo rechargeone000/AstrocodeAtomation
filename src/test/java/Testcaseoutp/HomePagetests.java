@@ -22,11 +22,10 @@ public class HomePagetests extends BaseTestclass {
 	HomePaget hm;
 	LoginPage lp;
 
-	String ExcelFilePath = "C:\\Users\\dell\\eclipse-workspace\\Asttrokautomation\\src\\test\\resources\\data.xlsx";
+	String ExcelFilePath = System.getProperty("user.dir") + "\\src\\test\\resources\\data.xlsx";
 
 	@BeforeMethod
 	public void launchbrowser() {
-		System.out.println("lodconf runned for llll");
 
 		loadConfig();
 
@@ -38,58 +37,67 @@ public class HomePagetests extends BaseTestclass {
 		driver.quit();
 	}
 
-	@Test(alwaysRun = true)
+	@Test(alwaysRun = true, priority = 4)
 	public void Logoicondesplayed()
 			throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
-		System.out.println("lodconf runned for home1");
 
-		System.out.println("enterd in theLogoicond esplayed ");
 		hm = new HomePaget();
 
-		manageUtils.Log.startTestCase("Logoicondesplayed  Logoicondesplayed ");
-		
-		hm.Logoicon();
+		boolean sts = hm.Logoicon();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		manageUtils.Log.endTestCase("endtestcase");
+		// manageUtils.Log.endTestCase("endtestcase");
 
+		String srno = ReadExcel.readExcelCell(4, 0);
+		int indexno = Integer.parseInt(srno);
+		String testcasename = ReadExcel.readExcelCell(4, 1);
+		String Testdescr = ReadExcel.readExcelCell(4, 2);
+		String result = ReadExcel.readExcelCell(4, 3);
+		String Comments = ReadExcel.readExcelCell(4, 4);
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(3, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(3, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(3, 3);
-		System.out.println("test started1");
-		rc.startTestcase(Testcasename, "3", 3, Testcasedescription, "pass", "page  is  open");
+		if (sts == true) {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		} else {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 
+		}
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void OnlineCunsultation() throws IOException, EncryptedDocumentException, InvalidFormatException {
 		hm = new HomePaget();
 		setup();
 		hm.onlineconsuatation();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(4, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(4, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(4, 3);
-		System.out.println("test started1");
+		String srno = ReadExcel.readExcelCell(5, 0);
+		int indexno = Integer.parseInt(srno);
+		String testcasename = ReadExcel.readExcelCell(5, 1);
+		String Testdescr = ReadExcel.readExcelCell(5, 2);
+		String result = ReadExcel.readExcelCell(5, 3);
+		String Comments = ReadExcel.readExcelCell(5, 4);
 
-		rc.startTestcase(Testcasename, "4", 4, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 6)
 	public void personalizedreport() throws IOException, EncryptedDocumentException, InvalidFormatException {
 		hm = new HomePaget();
 		setup();
 
 		hm.personalizedreport();
-		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(5, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(5, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(5, 3);
-		System.out.println("test started1");
+		String srno = ReadExcel.readExcelCell(6, 0);
+		int indexno = Integer.parseInt(srno);
+		String testcasename = ReadExcel.readExcelCell(6, 1);
+		String Testdescr = ReadExcel.readExcelCell(6, 2);
+		String result = ReadExcel.readExcelCell(6, 3);
+		String Comments = ReadExcel.readExcelCell(6, 4);
 
-		rc.startTestcase(Testcasename, "5", 5, Testcasedescription, "pass", "page  is  open");
+		ReadExcel rc = new ReadExcel();
+		if (true) {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		} else {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		}
 
 	}
 
@@ -100,7 +108,7 @@ public class HomePagetests extends BaseTestclass {
 
 	}
 
-	// @Test(priority = 6)
+	// @Test(priority = 7)
 	public void viewallfirsthind()
 			throws InterruptedException, IOException, EncryptedDocumentException, InvalidFormatException {
 		hm = new HomePaget();

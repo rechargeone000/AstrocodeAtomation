@@ -49,9 +49,14 @@ public class LoginPage extends BaseTestclass {
 
 		// driver.findElement(By.xpath("//*[@id=\"navbarContent\"]/ul/li[1]/a")).click();
 
+	
+
+	}
+	
+	public void clickonhomelink() {
+		
 		By homelink = By.xpath("//a[normalize-space()='Home']");
 		CommonHelp.clickOnElement_JS(homelink);
-
 	}
 
 	public void userlogout() {

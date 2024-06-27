@@ -75,7 +75,7 @@ public class HomePaget extends BaseTestclass {
 		
 		driver.findElement(conultationwithastro).click();
 	}
-	public void Logoicon() throws InterruptedException {
+	public boolean Logoicon() throws InterruptedException {
 
 		// driver.findElement(firstbullet1).click();
 
@@ -85,6 +85,7 @@ public class HomePaget extends BaseTestclass {
 		boolean logovis = driver.findElement(logo).isDisplayed();
 
 		Assert.assertEquals(logovis, true);
+		return logovis;
 
 	}
 

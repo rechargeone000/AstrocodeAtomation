@@ -17,7 +17,7 @@ public class WriteExcel {
 			String Result, String comment) throws IOException, EncryptedDocumentException, InvalidFormatException {
 
 	
-		String fileName = "C:\\Users\\dell\\eclipse-workspace\\Asttrokautomation\\src\\test\\resources\\Seleniumreport.xlsx";
+		String fileName = System.getProperty("user.dir")+"\\src\\test\\resources\\Seleniumreport.xlsx";
 
 
 		FileInputStream inputStream = new FileInputStream(new File(fileName));
