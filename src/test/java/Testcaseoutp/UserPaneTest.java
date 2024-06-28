@@ -19,8 +19,8 @@ public class UserPaneTest extends BaseTestclass {
 
 	UserPanel up = new UserPanel();
 	LoginPage lp = new LoginPage();
-	String ExcelFilePath = "C:\\Users\\dell\\eclipse-workspace\\Asttrokautomation\\src\\test\\resources\\data.xlsx";
-
+	//String ExcelFilePath = "C:\\Users\\dell\\eclipse-workspace\\Asttrokautomation\\src\\test\\resources\\data.xlsx";
+	String ExcelFilePath = System.getProperty("user.dir") + "\\src\\test\\resources\\data.xlsx";
 	@BeforeMethod
 	public void launchbrowser() {
 		
@@ -35,7 +35,7 @@ public class UserPaneTest extends BaseTestclass {
 		driver.quit();
 	}
 
-	// @Test(priority = 14)
+	 @Test(priority = 15)
 	public void checklearningPage() throws InterruptedException, IOException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -60,15 +60,15 @@ public class UserPaneTest extends BaseTestclass {
 			e.printStackTrace();
 		}
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(14, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(14, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(14, 3);
+		String Testcasename = ReadExcel.readExcelCell(15, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(15, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(15, 3);
 		System.out.println("test started1");
-		rc.startTestcase(Testcasename, "3", 3, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(Testcasename, "3", 15, Testcasedescription, "pass", "page  is  open");
 
 	}
 
-	// @Test(priority = 15)
+	 @Test(priority = 16)
 	public void coursespagetest() throws InterruptedException, IOException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -92,15 +92,15 @@ public class UserPaneTest extends BaseTestclass {
 			e.printStackTrace();
 		}
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(15, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(15, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(15, 3);
+		String Testcasename = ReadExcel.readExcelCell(16, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(16, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(16, 3);
 		System.out.println("test started1");
-		rc.startTestcase(Testcasename, "3", 15, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(Testcasename, "16", 16, Testcasedescription, "pass", "page  is  open");
 
 	}
 
-	// @Test(priority = 16)
+	@Test(priority = 17)
 	public void purchasesection() throws InterruptedException, IOException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -121,15 +121,14 @@ public class UserPaneTest extends BaseTestclass {
 			e.printStackTrace();
 		}
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(14, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(14, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(3, 3);
-		System.out.println("test started1");
-		rc.startTestcase(Testcasename, "16", 16, Testcasedescription, "pass", "page  is  open");
+		String Testcasename = ReadExcel.readExcelCell(17, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(17, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(17, 3);
+		rc.startTestcase(Testcasename, "17", 17, Testcasedescription, "pass", "page  is  open");
 
 	}
 
-	// @Test(priority = 17)
+	 @Test(priority = 18)
 	public void mycomments() {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -164,11 +163,11 @@ public class UserPaneTest extends BaseTestclass {
 		String Testcasedescription = ReadExcel.readExcelCell(14, 2);
 		String TestCaseresult = ReadExcel.readExcelCell(3, 3);
 		System.out.println("test started1");
-		rc.startTestcase(Testcasename, "16", 16, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(Testcasename, "18", 18, Testcasedescription, "pass", "page  is  open");
 
 	}
 
-	// @Test(priority = 18)
+	@Test(priority = 19)
 	public void favoritesection() throws InterruptedException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -188,14 +187,14 @@ public class UserPaneTest extends BaseTestclass {
 			e.printStackTrace();
 		}
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(14, 1);
+		String Testcasename = ReadExcel.readExcelCell(18, 1);
 		String Testcasedescription = ReadExcel.readExcelCell(14, 2);
 		String TestCaseresult = ReadExcel.readExcelCell(3, 3);
 		System.out.println("test started1");
-		rc.startTestcase(Testcasename, "18", 18, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(Testcasename, "19", 19, Testcasedescription, "pass", "page  is  open");
 	}
 
-	// @Test(priority = 19)
+	 @Test(priority = 20)
 	public void Assignmentpage() {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -218,14 +217,14 @@ public class UserPaneTest extends BaseTestclass {
 			e.printStackTrace();
 		}
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(14, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(14, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(3, 3);
+		String Testcasename = ReadExcel.readExcelCell(20, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(20, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(20, 3);
 		System.out.println("test started1");
-		rc.startTestcase(Testcasename, "18", 18, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(Testcasename, "20", 20, Testcasedescription, "pass", "page  is  open");
 	}
 
-	// @Test(priority = 20)
+	@Test(priority = 21)
 
 	public void quizzes() {
 		up = new UserPanel();
@@ -255,14 +254,14 @@ public class UserPaneTest extends BaseTestclass {
 			e.printStackTrace();
 		}
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(14, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(14, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(3, 3);
+		String Testcasename = ReadExcel.readExcelCell(21, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(21, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(21, 3);
 		System.out.println("test started1");
-		rc.startTestcase(Testcasename, "18", 18, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(Testcasename, "21", 21, Testcasedescription, "pass", "page  is  open");
 	}
 
-//	@Test(priority = 21)
+	@Test(priority = 22)
 	public void notparticpated() {
 		up = new UserPanel();
 
@@ -288,14 +287,14 @@ public class UserPaneTest extends BaseTestclass {
 			e.printStackTrace();
 		}
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(14, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(14, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(3, 3);
+		String Testcasename = ReadExcel.readExcelCell(22, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(22, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(22, 3);
 		System.out.println("test started1");
-		rc.startTestcase(Testcasename, "18", 18, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(Testcasename, "22", 22, Testcasedescription, "pass", "page  is  open");
 	}
 
-	// @Test(priority = 22)
+	 @Test(priority = 23)
 
 	public void Financialsummary()
 			throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
@@ -311,10 +310,10 @@ public class UserPaneTest extends BaseTestclass {
 		String TestCaseresult = ReadExcel.readExcelCell(3, 3);
 		ReadExcel rc = new ReadExcel();
 
-		rc.startTestcase(Testcasename, "18", 18, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(Testcasename, "23", 23, Testcasedescription, "pass", "page  is  open");
 	}
 
-	// @Test(priority = 23)
+	@Test(priority = 24)
 	public void installmentpage() {
 
 		up = new UserPanel();
@@ -351,16 +350,17 @@ public class UserPaneTest extends BaseTestclass {
 		// TODO Auto-generated catch block
 
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(14, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(14, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(3, 3);
-		System.out.println("test started1");
+		String Testcasename = ReadExcel.readExcelCell(24, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(24, 2);
+		String result = ReadExcel.readExcelCell(24, 3);
+		String TestCaseresult = ReadExcel.readExcelCell(24, 3);
+		String Comments = ReadExcel.readExcelCell(24, 3);
 
-		rc.startTestcase(Testcasename, "18", 18, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(Testcasename, "24", 24, Testcasedescription, result, Comments);
 
 	}
 
-	// @Test(priority = 24)
+	 @Test(priority = 25)
 
 	public void viewdeatails() {
 
@@ -400,11 +400,11 @@ public class UserPaneTest extends BaseTestclass {
 		String Testcasedescription = ReadExcel.readExcelCell(14, 2);
 		String TestCaseresult = ReadExcel.readExcelCell(3, 3);
 		ReadExcel rc = new ReadExcel();
-		rc.startTestcase(Testcasename, "23", 23, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(Testcasename, "25", 25, Testcasedescription, "pass", "page  is  open");
 
 	}
 
-	// @Test(priority = 25)
+	 @Test(priority = 26)
 	public void supporttest() {
 		try {
 			lp.logincase(prop.getProperty("userrrr"), prop.getProperty("passss"));
@@ -418,11 +418,11 @@ public class UserPaneTest extends BaseTestclass {
 		String Testcasename = ReadExcel.readExcelCell(14, 1);
 		String Testcasedescription = ReadExcel.readExcelCell(14, 2);
 		String TestCaseresult = ReadExcel.readExcelCell(3, 3);
-		rc.startTestcase(Testcasename, "23", 23, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(Testcasename, "26", 26, Testcasedescription, "pass", "page  is  open");
 
 	}
 
-	// @Test(priority = 26)
+	@Test(priority = 27)
 	public void supporttabew() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -439,11 +439,13 @@ public class UserPaneTest extends BaseTestclass {
 		String Testcasename = ReadExcel.readExcelCell(26, 1);
 		String Testcasedescription = ReadExcel.readExcelCell(26, 2);
 		String TestCaseresult = ReadExcel.readExcelCell(26, 3);
+		String Comments = ReadExcel.readExcelCell(26, 3);
+
 		ReadExcel rc = new ReadExcel();
-		rc.startTestcase(Testcasename, "26", 26, Testcasedescription, TestCaseresult, "page  is  open");
+		rc.startTestcase(Testcasename, "27", 27, Testcasedescription, TestCaseresult, Comments);
 	}
 
-	@Test(priority = 26)
+	@Test(priority = 28)
 	public void Incustomersupport() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -457,14 +459,14 @@ public class UserPaneTest extends BaseTestclass {
 		up.indcustomersupport();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 
-		String Testcasename = ReadExcel.readExcelCell(26, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(26, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(26, 3);
+		String Testcasename = ReadExcel.readExcelCell(28, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(28, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(28, 3);
 		ReadExcel rc = new ReadExcel();
-		rc.startTestcase(Testcasename, "26", 26, Testcasedescription, TestCaseresult, "page  is  open");
+		rc.startTestcase(Testcasename, "28", 28, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 27)
+	@Test(priority = 29)
 	public void ticketcustom() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -478,14 +480,14 @@ public class UserPaneTest extends BaseTestclass {
 		up.ticket();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 
-		String Testcasename = ReadExcel.readExcelCell(26, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(26, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(26, 3);
+		String Testcasename = ReadExcel.readExcelCell(29, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(29, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(29, 3);
 		ReadExcel rc = new ReadExcel();
-		rc.startTestcase(Testcasename, "26", 26, Testcasedescription, TestCaseresult, "page  is  open");
+		rc.startTestcase(Testcasename, "29", 29, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 27)
+	@Test(priority = 30)
 	public void ticketcusto() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -499,14 +501,14 @@ public class UserPaneTest extends BaseTestclass {
 		up.ticket();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 
-		String Testcasename = ReadExcel.readExcelCell(26, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(26, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(26, 3);
+		String Testcasename = ReadExcel.readExcelCell(30, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(30, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(30, 3);
 		ReadExcel rc = new ReadExcel();
-		rc.startTestcase(Testcasename, "26", 26, Testcasedescription, TestCaseresult, "page  is  open");
+		rc.startTestcase(Testcasename, "30", 30, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 28)
+	@Test(priority = 31)
 	public void Forumtab() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -520,14 +522,14 @@ public class UserPaneTest extends BaseTestclass {
 		up.newtopic();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 
-		String Testcasename = ReadExcel.readExcelCell(26, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(26, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(26, 3);
+		String Testcasename = ReadExcel.readExcelCell(31, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(31, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(31, 3);
 		ReadExcel rc = new ReadExcel();
-		rc.startTestcase(Testcasename, "26", 26, Testcasedescription, TestCaseresult, "page  is  open");
+		rc.startTestcase(Testcasename, "31", 31, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 29)
+	@Test(priority = 32)
 	public void Forumtabnewtopics() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -541,14 +543,14 @@ public class UserPaneTest extends BaseTestclass {
 		up.newtopics();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 
-		String Testcasename = ReadExcel.readExcelCell(26, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(26, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(26, 3);
+		String Testcasename = ReadExcel.readExcelCell(32, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(32, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(32, 3);
 		ReadExcel rc = new ReadExcel();
-		rc.startTestcase(Testcasename, "26", 26, Testcasedescription, TestCaseresult, "page  is  open");
+		rc.startTestcase(Testcasename, "32", 32, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 28)
+	@Test(priority = 33)
 	public void Forumtabnewtopics1() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -562,14 +564,14 @@ public class UserPaneTest extends BaseTestclass {
 		up.newtopic();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 
-		String Testcasename = ReadExcel.readExcelCell(26, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(26, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(26, 3);
+		String Testcasename = ReadExcel.readExcelCell(33, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(33, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(33, 3);
 		ReadExcel rc = new ReadExcel();
-		rc.startTestcase(Testcasename, "26", 26, Testcasedescription, TestCaseresult, "page  is  open");
+		rc.startTestcase(Testcasename, "33", 33, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 29)
+	@Test(priority = 34)
 	public void ForumtabnewPost() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -583,14 +585,14 @@ public class UserPaneTest extends BaseTestclass {
 		up.Mypostds();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 
-		String Testcasename = ReadExcel.readExcelCell(26, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(26, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(26, 3);
+		String Testcasename = ReadExcel.readExcelCell(34, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(34, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(34, 3);
 		ReadExcel rc = new ReadExcel();
-		rc.startTestcase(Testcasename, "26", 26, Testcasedescription, TestCaseresult, "page  is  open");
+		rc.startTestcase(Testcasename, "34", 34, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 29)
+	@Test(priority = 35)
 	public void bookmarkspage() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -604,14 +606,14 @@ public class UserPaneTest extends BaseTestclass {
 		up.bookmarks();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 
-		String Testcasename = ReadExcel.readExcelCell(26, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(26, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(26, 3);
+		String Testcasename = ReadExcel.readExcelCell(35, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(35, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(35, 3);
 		ReadExcel rc = new ReadExcel();
-		rc.startTestcase(Testcasename, "26", 26, Testcasedescription, TestCaseresult, "page  is  open");
+		rc.startTestcase(Testcasename, "35", 35, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 30)
+	@Test(priority = 36)
 	public void logoutpageuser() {
 
 		up.logoutpageuser();
@@ -625,11 +627,11 @@ public class UserPaneTest extends BaseTestclass {
 			e.printStackTrace();
 		}
 
-		String Testcasename = ReadExcel.readExcelCell(26, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(26, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(26, 3);
+		String Testcasename = ReadExcel.readExcelCell(36, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(36, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(36, 3);
 		ReadExcel rc = new ReadExcel();
-		rc.startTestcase(Testcasename, "26", 26, Testcasedescription, TestCaseresult, "page  is  open");
+		rc.startTestcase(Testcasename, "36", 36, Testcasedescription, TestCaseresult, "page  is  open");
 
 	}
 

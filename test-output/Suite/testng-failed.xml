@@ -9,14 +9,26 @@
       <class name="Testcaseoutp.HomePagetests">
         <methods>
           <include name="quitbrowser"/>
-          <include name="Logoicondesplayed"/>
-          <include name="personalizedreport"/>
+          <include name="dataconfig"/>
+          <include name="contactuspage"/>
           <include name="afterlast"/>
           <include name="launchbrowser"/>
           <include name="beforessuit"/>
-          <include name="OnlineCunsultation"/>
+          <include name="aftsetup"/>
         </methods>
       </class> <!-- Testcaseoutp.HomePagetests -->
+      <class name="Testcaseoutp.UserPaneTest">
+        <methods>
+          <include name="dataconfig"/>
+          <include name="logoutpageuser"/>
+          <include name="quitbrowser"/>
+          <include name="afterlast"/>
+          <include name="launchbrowser"/>
+          <include name="beforessuit"/>
+          <include name="ForumtabnewPost"/>
+          <include name="aftsetup"/>
+        </methods>
+      </class> <!-- Testcaseoutp.UserPaneTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

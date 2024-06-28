@@ -28,7 +28,7 @@ public class OrderCourseTest extends BaseTestclass {
 		// driver.quit();
 	}
 
-	 @Test(priority=35)
+	 @Test(priority=37)
 	public void courseselect() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 //courcess from course dropdown
 		OrderCourse oc = new OrderCourse();
@@ -50,15 +50,15 @@ public class OrderCourseTest extends BaseTestclass {
 		System.out.println("done");
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(4, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(4, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(4, 3);
+		String Testcasename = ReadExcel.readExcelCell(37, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(37, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(37, 3);
 		System.out.println("test started1");
 
-		rc.startTestcase(Testcasename, "4", 4, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(Testcasename, "37", 37, Testcasedescription, "pass", "page  is  open");
 	}
 
-	 @Test(priority=36)
+	 @Test(priority=38)
 	public void addTocartbutton() throws InterruptedException {
 
 		// item added to the cart
@@ -80,14 +80,13 @@ public class OrderCourseTest extends BaseTestclass {
 		// oc.checkboxcart();
 		// added item to the cart
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(3, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(3, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(3, 3);
-		System.out.println("test started1");
-		rc.startTestcase(Testcasename, "3", 3, Testcasedescription, "pass", "page  is  open");
+		String Testcasename = ReadExcel.readExcelCell(38, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(38, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(38, 3);
+		rc.startTestcase(Testcasename, "38", 38, Testcasedescription, "pass", "page  is  open");
 	}
 
-	 @Test(priority=36)
+	 @Test(priority=39)
 
 	public void gotocartpage() throws EncryptedDocumentException, InvalidFormatException {
 

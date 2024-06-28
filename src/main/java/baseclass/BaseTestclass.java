@@ -37,8 +37,8 @@ public class BaseTestclass {
 	// public static ExtentReports extent = new ExtentReports();
 	// public static ExtentSparkReporter spark = new
 	// ExtentSparkReporter("spark.html");
-	//commited
-	//again committed
+	// commited
+	// again committed
 	public static WebDriver driver;
 
 	public Properties prop;
@@ -48,16 +48,16 @@ public class BaseTestclass {
 		Extentmanagerr.setExtent();
 		DOMConfigurator.configure("log4j.xml");
 
-	
 	}
 
 	@BeforeClass
 	public void dataconfig() {
-		
+
 		try {
 			System.out.println(System.getProperty("user.dir") + "\\Configuration\\config.properties");
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "\\Configuration\\config.properties");
+			FileInputStream ip = new FileInputStream(
+					System.getProperty("user.dir") + "\\Configuration\\config.properties");
 			prop.load(ip);
 
 		} catch (FileNotFoundException e) {
@@ -66,26 +66,26 @@ public class BaseTestclass {
 			e.printStackTrace();
 		}
 	}
-	public void loadConfig()  {
+
+	public void loadConfig() {
 
 		WebDriverManager.chromedriver().setup();
 
 		driver = new ChromeDriver();
 
 		driver.manage().window().maximize();
-		System.out.println(prop.getProperty("url"));
-		System.out.println(driver);
+
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		driver.manage().deleteAllCookies();
-		
+
 		driver.get(prop.getProperty("url"));
 
-
 	}
+
 	public void setup() {
 		System.out.println(".");
 	}
-    
+
 	@AfterClass
 	public void aftsetup() {
 
@@ -93,7 +93,6 @@ public class BaseTestclass {
 
 	}
 
-	
 	public void qutdriver() {
 
 		driver.quit();
@@ -103,8 +102,6 @@ public class BaseTestclass {
 	@AfterSuite
 	public void afterlast() {
 		Extentmanagerr.endReport();
-
-		
 
 	}
 

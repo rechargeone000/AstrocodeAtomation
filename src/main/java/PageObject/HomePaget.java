@@ -68,13 +68,14 @@ public class HomePaget extends BaseTestclass {
 	By pinrest = By.xpath("/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/a[5]/img[1]");
 
 	By addresshm = By.xpath("//span[contains(text(),'312, 3rd Floor, Vikram Urbane, 25-A Mechanic Nagar')]");
-	
+
 	By conultationwithastro = By.linkText("consult-with-astrologers");
-	
+
 	public void clickonconultationwithastro() {
-		
+
 		driver.findElement(conultationwithastro).click();
 	}
+
 	public boolean Logoicon() throws InterruptedException {
 
 		// driver.findElement(firstbullet1).click();
@@ -149,11 +150,10 @@ public class HomePaget extends BaseTestclass {
 		driver.navigate().back();
 
 	}
-	
+
 	public void clickonviewallastrbtn() {
 		driver.findElement(AstroViewAll).click();
 
-		
 	}
 
 	public void viewallAstrologers() throws InterruptedException {
@@ -187,7 +187,7 @@ public class HomePaget extends BaseTestclass {
 	}
 
 	public void viewallbtninstructor() throws InterruptedException {
-   
+
 		By instructor = By.xpath("(//a[normalize-space()='View All'])[5]");
 		By instructtab = By.xpath("//a[@id='content-tab']");
 		driver.findElement(instructor).click();
@@ -277,7 +277,13 @@ public class HomePaget extends BaseTestclass {
 		By personalized = By.xpath("//img[@alt='Personalized <br> Reports']");
 		CommonHelp.clickOnElement(personalized);
 		CommonHelp.scrollToPageDown();
-		driver.navigate().back();
+	//	driver.navigate().back();
+	}
+
+	public String persolizedtext() {
+		String personlizedhead = driver.findElement(By.xpath("//h3[@class='tatsu-title NF A B E G I N d DB VB tB V']"))
+				.getText();
+		return personlizedhead;
 	}
 
 	public void formbutton() throws InterruptedException {

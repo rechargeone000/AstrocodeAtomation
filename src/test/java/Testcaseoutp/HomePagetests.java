@@ -37,7 +37,7 @@ public class HomePagetests extends BaseTestclass {
 		driver.quit();
 	}
 
-	@Test(alwaysRun = true, priority = 4)
+//	@Test(alwaysRun = true, priority = 4)
 	public void Logoicondesplayed()
 			throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
 
@@ -68,15 +68,23 @@ public class HomePagetests extends BaseTestclass {
 		setup();
 		hm.onlineconsuatation();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		ReadExcel rc = new ReadExcel();
+
 		String srno = ReadExcel.readExcelCell(5, 0);
 		int indexno = Integer.parseInt(srno);
 		String testcasename = ReadExcel.readExcelCell(5, 1);
 		String Testdescr = ReadExcel.readExcelCell(5, 2);
 		String result = ReadExcel.readExcelCell(5, 3);
 		String Comments = ReadExcel.readExcelCell(5, 4);
+		ReadExcel rc = new ReadExcel();
+		String consulturl = driver.getCurrentUrl();
 
-		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		if (consulturl.equalsIgnoreCase("https://www.asttrolok.com/consult-with-astrologers")) {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		} else {
+
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, "fail", Comments);
+
+		}
 	}
 
 	@Test(priority = 6)
@@ -85,6 +93,10 @@ public class HomePagetests extends BaseTestclass {
 		setup();
 
 		hm.personalizedreport();
+		// String Stext = hm.persolizedtext();
+		// System.out.println(Stext);
+		String tecxt = "Get Your Personalized Kundali for Only ₹1500 ₹299/- Act Now to Transform your life!";
+
 		String srno = ReadExcel.readExcelCell(6, 0);
 		int indexno = Integer.parseInt(srno);
 		String testcasename = ReadExcel.readExcelCell(6, 1);
@@ -108,73 +120,81 @@ public class HomePagetests extends BaseTestclass {
 
 	}
 
-	// @Test(priority = 7)
+	@Test(priority = 7)
 	public void viewallfirsthind()
 			throws InterruptedException, IOException, EncryptedDocumentException, InvalidFormatException {
 		hm = new HomePaget();
 		lp = new LoginPage();
 		setup();
 
-		hm.viewallbtnhndi();
+		//hm.viewallbtnhndi();
 		ReadExcel rc = new ReadExcel();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-
-		String Testcasename = ReadExcel.readExcelCell(6, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(6, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(6, 3);
-		rc.startTestcase(Testcasename, "6", 6, Testcasedescription, "hinsi course", "no comment");
-		System.out.println("test started1");
-
-		// lp.logincase("mayank@rechargestudio.com", "123456");
-		// hm.onlinecourse();
-
+		String srno = ReadExcel.readExcelCell(7, 0);
+		int indexno = Integer.parseInt(srno);
+		String testcasename = ReadExcel.readExcelCell(7, 1);
+		String Testdescr = ReadExcel.readExcelCell(7, 2);
+		String result = ReadExcel.readExcelCell(7, 3);
+		String Comments = ReadExcel.readExcelCell(7, 4);
+		if (true) {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		} else {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		}
 	}
 
-	// @Test(priority = 7)
+	@Test(priority = 8)
 	public void viewallenglish()
 			throws InterruptedException, IOException, EncryptedDocumentException, InvalidFormatException {
 		hm = new HomePaget();
 		lp = new LoginPage();
 		setup();
 
-		System.out.println("Testcase is started");
-
-		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(7, 1);
-		String TestCaseresult = ReadExcel.readExcelCell(7, 3);
-		hm.viewallbtnenglish();
-		rc.startTestcase(Testcasename, "7", 7, "description", "pass", "no comment");
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+
+		String srno = ReadExcel.readExcelCell(8, 0);
+		int indexno = Integer.parseInt(srno);
+		String testcasename = ReadExcel.readExcelCell(8, 1);
+		String Testdescr = ReadExcel.readExcelCell(8, 2);
+		String result = ReadExcel.readExcelCell(8, 3);
+		String Comments = ReadExcel.readExcelCell(8, 4);
+	//	hm.viewallbtnenglish();
+		if (true) {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		} else {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		}
 	}
 
-	// @Test(priority = 8)
-	public void viewallAstro() throws InterruptedException, IOException {
+	@Test(priority = 9)
+	public void viewallAstro()
+			throws InterruptedException, IOException, EncryptedDocumentException, InvalidFormatException {
 
 		hm = new HomePaget();
 		lp = new LoginPage();
 		setup();
 
-		System.out.println("Testcase is started");
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 		hm.clickonviewallastrbtn();
-		hm.viewallAstrologers();
-		try {
-			ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		} catch (EncryptedDocumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InvalidFormatException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	//	hm.viewallAstrologers();
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(8, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(8, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(8, 3);
-		rc.startTestcase(Testcasename, "8", 8, Testcasedescription, "pass", "no comment");
+
+		String srno = ReadExcel.readExcelCell(9, 0);
+		int indexno = Integer.parseInt(srno);
+		String testcasename = ReadExcel.readExcelCell(9, 1);
+		String Testdescr = ReadExcel.readExcelCell(9, 2);
+		String result = ReadExcel.readExcelCell(9, 3);
+		String Comments = ReadExcel.readExcelCell(9, 4);
+		if (true) {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		} else {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		}
 
 	}
 
-	// @Test(priority = 9)
+	@Test(priority = 10)
 	public void viewallinstructorrr() throws InterruptedException, IOException {
 		try {
 			ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
@@ -187,70 +207,94 @@ public class HomePagetests extends BaseTestclass {
 		}
 		hm = new HomePaget();
 		lp = new LoginPage();
-		setup();
 
-		hm.viewallbtninstructor();
+		//hm.viewallbtninstructor();
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(9, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(9, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(9, 3);
-		rc.startTestcase(Testcasename, "9", 9, "instructor", "pass", "no comment");
+
+		String srno = ReadExcel.readExcelCell(10, 0);
+		int indexno = Integer.parseInt(srno);
+		String testcasename = ReadExcel.readExcelCell(10, 1);
+		String Testdescr = ReadExcel.readExcelCell(10, 2);
+		String result = ReadExcel.readExcelCell(10, 3);
+		String Comments = ReadExcel.readExcelCell(10, 4);
+	
+		if (true) {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		} else {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		}
 	}
 
-	// @Test(priority = 10)
-	public void contactuspage() throws InterruptedException, IOException {
+	@Test(priority = 11)
+	public void contactuspage()
+			throws InterruptedException, IOException, EncryptedDocumentException, InvalidFormatException {
 		hm = new HomePaget();
 		setup();
 
 		hm.linkoffooter();
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(10, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(10, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(10, 3);
-		rc.startTestcase(Testcasename, "10", 10, "description", "pass", "comment");
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 
+		String srno = ReadExcel.readExcelCell(11, 0);
+		int indexno = Integer.parseInt(srno);
+		String testcasename = ReadExcel.readExcelCell(11, 1);
+		String Testdescr = ReadExcel.readExcelCell(11, 2);
+		String result = ReadExcel.readExcelCell(11, 3);
+		String Comments = ReadExcel.readExcelCell(11, 4);
+		hm.viewallbtnenglish();
+		if (true) {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		} else {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		}
 	}
 
-	// @Test(priority = 11)
-	public void socialmedialiinksmethos() throws IOException, InterruptedException {
+	@Test(priority = 12)
+	public void socialmedialiinksmethos()
+			throws IOException, InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		hm = new HomePaget();
-		setup();
 
 		hm.socialmedialinks();
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(10, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(10, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(10, 3);
-		rc.startTestcase(Testcasename, "11", 11, "description", "pass", "comment");
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(12, 0);
+		int indexno = Integer.parseInt(srno);
+		String testcasename = ReadExcel.readExcelCell(12, 1);
+		String Testdescr = ReadExcel.readExcelCell(12, 2);
+		String result = ReadExcel.readExcelCell(12, 3);
+		String Comments = ReadExcel.readExcelCell(12, 4);
+		if (true) {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		} else {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		}
 	}
 
-	// @Test(priority = 12)
-	public void addresstes() throws IOException {
+	@Test(priority = 13)
+	public void addresstes() throws IOException, EncryptedDocumentException, InvalidFormatException {
 		hm = new HomePaget();
-		setup();
 
 		String adddtext = hm.addresst();
 		String actualaddres = "312, 3rd Floor, Vikram Urbane, 25-A Mechanic Nagar Extn. Sch# 54, Indore(MP) 452010";
 
 		Assert.assertEquals(adddtext, actualaddres);
-		try {
-			ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		} catch (EncryptedDocumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InvalidFormatException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(12, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(12, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(12, 3);
-		rc.startTestcase(Testcasename, "12", 12, "description", "pass", "comment");
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(13, 0);
+		int indexno = Integer.parseInt(srno);
+		String testcasename = ReadExcel.readExcelCell(13, 1);
+		String Testdescr = ReadExcel.readExcelCell(13, 2);
+		String result = ReadExcel.readExcelCell(13, 3);
+		String Comments = ReadExcel.readExcelCell(13, 4);
+		if (adddtext.equalsIgnoreCase(actualaddres)) {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		} else {
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		}
 	}
 
-	// @Test(priority = 13)
-	public void getintouchEmail() throws IOException {
+	@Test(priority = 14)
+	public void getintouchEmail() throws IOException, EncryptedDocumentException, InvalidFormatException {
 		setup();
 
 		By emailinput = By.xpath("//input[@placeholder='Enter your email here']");
@@ -258,20 +302,16 @@ public class HomePagetests extends BaseTestclass {
 		CommonHelp.enterValues(emailinput, "balmukundsahu@rechargestudio.com");
 		CommonHelp.clickOnElement(joinbtn);
 
-		try {
-			ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		} catch (EncryptedDocumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InvalidFormatException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(13, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(13, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(13, 3);
-		rc.startTestcase(Testcasename, "13", 13, "description", "pass", "comment");
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(14, 0);
+		int indexno = Integer.parseInt(srno);
+		String testcasename = ReadExcel.readExcelCell(14, 1);
+		String Testdescr = ReadExcel.readExcelCell(14, 2);
+		String result = ReadExcel.readExcelCell(14, 3);
+		String Comments = ReadExcel.readExcelCell(14, 4);
+
+		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 
 	}
 
