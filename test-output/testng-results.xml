@@ -1,297 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="22" passed="21" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-28T17:11:52 IST" name="Default suite" finished-at="2024-06-28T17:24:00 IST" duration-ms="728344">
+  <suite started-at="2024-06-28T18:54:22 IST" name="Default suite" finished-at="2024-06-28T18:58:32 IST" duration-ms="249468">
     <groups>
     </groups>
-    <test started-at="2024-06-28T17:11:52 IST" name="Default test" finished-at="2024-06-28T17:24:00 IST" duration-ms="728344">
-      <class name="Testcaseoutp.UserPaneTest">
-        <test-method is-config="true" signature="beforessuit()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:11:51 IST" name="beforessuit" finished-at="2024-06-28T17:11:52 IST" duration-ms="536" status="PASS">
+    <test started-at="2024-06-28T18:54:22 IST" name="Default test" finished-at="2024-06-28T18:58:32 IST" duration-ms="249468">
+      <class name="Testcaseoutp.LoginpageTest">
+        <test-method is-config="true" signature="beforessuit()[pri:0, instance:Testcaseoutp.LoginpageTest@1573f9fc]" started-at="2024-06-28T18:54:22 IST" name="beforessuit" finished-at="2024-06-28T18:54:22 IST" duration-ms="455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforessuit -->
-        <test-method is-config="true" signature="dataconfig()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:11:52 IST" name="dataconfig" finished-at="2024-06-28T17:11:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="dataconfig()[pri:0, instance:Testcaseoutp.LoginpageTest@1573f9fc]" started-at="2024-06-28T18:54:22 IST" name="dataconfig" finished-at="2024-06-28T18:54:22 IST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataconfig -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:11:52 IST" name="launchbrowser" finished-at="2024-06-28T17:12:07 IST" duration-ms="14934" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.LoginpageTest@1573f9fc]" started-at="2024-06-28T18:54:22 IST" name="launchbrowser" finished-at="2024-06-28T18:54:52 IST" duration-ms="29895" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="checklearningPage()[pri:15, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:12:07 IST" name="checklearningPage" finished-at="2024-06-28T17:12:55 IST" duration-ms="48400" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checklearningPage -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:12:55 IST" name="quitbrowser" finished-at="2024-06-28T17:12:55 IST" duration-ms="348" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:12:55 IST" name="launchbrowser" finished-at="2024-06-28T17:13:03 IST" duration-ms="8079" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="coursespagetest()[pri:16, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:13:03 IST" name="coursespagetest" finished-at="2024-06-28T17:13:20 IST" duration-ms="17073" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- coursespagetest -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:13:20 IST" name="quitbrowser" finished-at="2024-06-28T17:13:21 IST" duration-ms="292" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:13:21 IST" name="launchbrowser" finished-at="2024-06-28T17:13:34 IST" duration-ms="13291" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="purchasesection()[pri:17, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:13:34 IST" name="purchasesection" finished-at="2024-06-28T17:14:09 IST" duration-ms="34733" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- purchasesection -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:14:09 IST" name="quitbrowser" finished-at="2024-06-28T17:14:09 IST" duration-ms="388" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:14:09 IST" name="launchbrowser" finished-at="2024-06-28T17:14:17 IST" duration-ms="7533" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="mycomments()[pri:18, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:14:17 IST" name="mycomments" finished-at="2024-06-28T17:14:43 IST" duration-ms="25896" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mycomments -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:14:43 IST" name="quitbrowser" finished-at="2024-06-28T17:14:43 IST" duration-ms="332" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:14:43 IST" name="launchbrowser" finished-at="2024-06-28T17:14:51 IST" duration-ms="7848" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="favoritesection()[pri:19, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:14:51 IST" name="favoritesection" finished-at="2024-06-28T17:15:11 IST" duration-ms="19851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- favoritesection -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:15:11 IST" name="quitbrowser" finished-at="2024-06-28T17:15:11 IST" duration-ms="358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:15:11 IST" name="launchbrowser" finished-at="2024-06-28T17:15:18 IST" duration-ms="6938" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="Assignmentpage()[pri:20, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:15:18 IST" name="Assignmentpage" finished-at="2024-06-28T17:15:30 IST" duration-ms="12221" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Assignmentpage -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:15:30 IST" name="quitbrowser" finished-at="2024-06-28T17:15:31 IST" duration-ms="347" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:15:31 IST" name="launchbrowser" finished-at="2024-06-28T17:15:40 IST" duration-ms="9903" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="quizzes()[pri:21, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:15:40 IST" name="quizzes" finished-at="2024-06-28T17:15:59 IST" duration-ms="18509" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quizzes -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:15:59 IST" name="quitbrowser" finished-at="2024-06-28T17:15:59 IST" duration-ms="330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:15:59 IST" name="launchbrowser" finished-at="2024-06-28T17:16:02 IST" duration-ms="3112" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="notparticpated()[pri:22, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:16:02 IST" name="notparticpated" finished-at="2024-06-28T17:16:19 IST" duration-ms="17021" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- notparticpated -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:16:19 IST" name="quitbrowser" finished-at="2024-06-28T17:16:20 IST" duration-ms="396" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:16:20 IST" name="launchbrowser" finished-at="2024-06-28T17:16:26 IST" duration-ms="5987" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="Financialsummary()[pri:23, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:16:26 IST" name="Financialsummary" finished-at="2024-06-28T17:16:39 IST" duration-ms="12735" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Financialsummary -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:16:39 IST" name="quitbrowser" finished-at="2024-06-28T17:16:39 IST" duration-ms="369" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:16:39 IST" name="launchbrowser" finished-at="2024-06-28T17:16:46 IST" duration-ms="6664" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="installmentpage()[pri:24, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:16:46 IST" name="installmentpage" finished-at="2024-06-28T17:17:00 IST" duration-ms="14871" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- installmentpage -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:17:00 IST" name="quitbrowser" finished-at="2024-06-28T17:17:01 IST" duration-ms="347" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:17:01 IST" name="launchbrowser" finished-at="2024-06-28T17:17:04 IST" duration-ms="3059" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="viewdeatails()[pri:25, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:17:04 IST" name="viewdeatails" finished-at="2024-06-28T17:17:21 IST" duration-ms="17139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- viewdeatails -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:17:21 IST" name="quitbrowser" finished-at="2024-06-28T17:17:21 IST" duration-ms="504" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:17:21 IST" name="launchbrowser" finished-at="2024-06-28T17:17:28 IST" duration-ms="6285" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="supporttest()[pri:26, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:17:28 IST" name="supporttest" finished-at="2024-06-28T17:17:38 IST" duration-ms="9964" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- supporttest -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:17:38 IST" name="quitbrowser" finished-at="2024-06-28T17:17:38 IST" duration-ms="332" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:17:38 IST" name="launchbrowser" finished-at="2024-06-28T17:17:45 IST" duration-ms="6473" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="supporttabew()[pri:27, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:17:45 IST" name="supporttabew" finished-at="2024-06-28T17:17:58 IST" duration-ms="13739" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- supporttabew -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:17:58 IST" name="quitbrowser" finished-at="2024-06-28T17:17:59 IST" duration-ms="290" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:17:59 IST" name="launchbrowser" finished-at="2024-06-28T17:18:10 IST" duration-ms="11485" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="Incustomersupport()[pri:28, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:18:10 IST" name="Incustomersupport" finished-at="2024-06-28T17:18:23 IST" duration-ms="13005" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Incustomersupport -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:18:23 IST" name="quitbrowser" finished-at="2024-06-28T17:18:23 IST" duration-ms="238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:18:23 IST" name="launchbrowser" finished-at="2024-06-28T17:18:29 IST" duration-ms="5859" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="ticketcustom()[pri:29, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:18:29 IST" name="ticketcustom" finished-at="2024-06-28T17:18:42 IST" duration-ms="12974" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ticketcustom -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:18:42 IST" name="quitbrowser" finished-at="2024-06-28T17:18:59 IST" duration-ms="16751" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:18:59 IST" name="launchbrowser" finished-at="2024-06-28T17:19:05 IST" duration-ms="6480" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="ticketcusto()[pri:30, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:19:05 IST" name="ticketcusto" finished-at="2024-06-28T17:19:20 IST" duration-ms="14724" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ticketcusto -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:19:20 IST" name="quitbrowser" finished-at="2024-06-28T17:19:20 IST" duration-ms="307" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:19:20 IST" name="launchbrowser" finished-at="2024-06-28T17:19:30 IST" duration-ms="9359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="Forumtab()[pri:31, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:19:30 IST" name="Forumtab" finished-at="2024-06-28T17:19:48 IST" duration-ms="18297" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Forumtab -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:19:48 IST" name="quitbrowser" finished-at="2024-06-28T17:19:48 IST" duration-ms="319" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:19:48 IST" name="launchbrowser" finished-at="2024-06-28T17:20:02 IST" duration-ms="13510" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="Forumtabnewtopics()[pri:32, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:20:02 IST" name="Forumtabnewtopics" finished-at="2024-06-28T17:20:23 IST" duration-ms="21112" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Forumtabnewtopics -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:20:23 IST" name="quitbrowser" finished-at="2024-06-28T17:20:24 IST" duration-ms="685" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:20:24 IST" name="launchbrowser" finished-at="2024-06-28T17:20:34 IST" duration-ms="10655" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="Forumtabnewtopics1()[pri:33, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:20:34 IST" name="Forumtabnewtopics1" finished-at="2024-06-28T17:21:03 IST" duration-ms="28284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Forumtabnewtopics1 -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:21:03 IST" name="quitbrowser" finished-at="2024-06-28T17:21:10 IST" duration-ms="7666" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:21:10 IST" name="launchbrowser" finished-at="2024-06-28T17:21:23 IST" duration-ms="12829" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="ForumtabnewPost()[pri:34, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:21:23 IST" name="ForumtabnewPost" finished-at="2024-06-28T17:21:36 IST" duration-ms="13187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ForumtabnewPost -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:21:36 IST" name="quitbrowser" finished-at="2024-06-28T17:21:37 IST" duration-ms="291" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:21:37 IST" name="launchbrowser" finished-at="2024-06-28T17:21:48 IST" duration-ms="11680" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="bookmarkspage()[pri:35, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:21:48 IST" name="bookmarkspage" finished-at="2024-06-28T17:22:02 IST" duration-ms="13586" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bookmarkspage -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:22:02 IST" name="quitbrowser" finished-at="2024-06-28T17:22:02 IST" duration-ms="279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:22:02 IST" name="launchbrowser" finished-at="2024-06-28T17:22:09 IST" duration-ms="6979" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="logoutpageuser()[pri:36, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:22:09 IST" name="logoutpageuser" finished-at="2024-06-28T17:23:59 IST" duration-ms="110351" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="loginforInstructor()[pri:4, instance:Testcaseoutp.LoginpageTest@1573f9fc]" started-at="2024-06-28T18:54:52 IST" name="loginforInstructor" finished-at="2024-06-28T18:58:00 IST" duration-ms="188362" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Unable to find element with locator By.xpath: //span[normalize-space()='Log out']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[java.util.concurrent.TimeoutException
 Build info: version: '4.20.0', revision: '866c76ca80'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [287b38f4b766a9c69c99d58e937ce361, clickElement {id=f.A8618A5DE4646358FFC2F4393FBE6492.d.3B45F9E05BBA63BA7CD2DD0C37B56F72.e.129}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45212}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:45212/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (287b38f4b766a9c69c99d58e937ce361)] -> xpath: //span[normalize-space()='Logout']]
+Session ID: 287b38f4b766a9c69c99d58e937ce361]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //span[normalize-space()='Log out']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: '4.20.0', revision: '866c76ca80'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at PageObject.UserPanel.logoutpageuser(UserPanel.java:245)
-at Testcaseoutp.UserPaneTest.logoutpageuser(UserPaneTest.java:619)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [287b38f4b766a9c69c99d58e937ce361, clickElement {id=f.A8618A5DE4646358FFC2F4393FBE6492.d.3B45F9E05BBA63BA7CD2DD0C37B56F72.e.129}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45212}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:45212/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (287b38f4b766a9c69c99d58e937ce361)] -> xpath: //span[normalize-space()='Logout']]
+Session ID: 287b38f4b766a9c69c99d58e937ce361
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:396)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:352)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at PageObject.LoginPage.adminlogout(LoginPage.java:70)
+at Testcaseoutp.LoginpageTest.loginforInstructor(LoginpageTest.java:162)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -318,25 +78,30 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:379)
+... 37 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutpageuser -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:23:59 IST" name="quitbrowser" finished-at="2024-06-28T17:24:00 IST" duration-ms="448" status="PASS">
+        </test-method> <!-- loginforInstructor -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.LoginpageTest@1573f9fc]" started-at="2024-06-28T18:58:00 IST" name="quitbrowser" finished-at="2024-06-28T18:58:32 IST" duration-ms="31084" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="aftsetup()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:24:00 IST" name="aftsetup" finished-at="2024-06-28T17:24:00 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="aftsetup()[pri:0, instance:Testcaseoutp.LoginpageTest@1573f9fc]" started-at="2024-06-28T18:58:32 IST" name="aftsetup" finished-at="2024-06-28T18:58:32 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftsetup -->
-        <test-method is-config="true" signature="afterlast()[pri:0, instance:Testcaseoutp.UserPaneTest@55fe41ea]" started-at="2024-06-28T17:24:00 IST" name="afterlast" finished-at="2024-06-28T17:24:01 IST" duration-ms="499" status="PASS">
+        <test-method is-config="true" signature="afterlast()[pri:0, instance:Testcaseoutp.LoginpageTest@1573f9fc]" started-at="2024-06-28T18:58:32 IST" name="afterlast" finished-at="2024-06-28T18:58:32 IST" duration-ms="704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterlast -->
-      </class> <!-- Testcaseoutp.UserPaneTest -->
+      </class> <!-- Testcaseoutp.LoginpageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

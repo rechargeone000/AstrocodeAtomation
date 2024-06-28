@@ -30,7 +30,7 @@ public class CommonHelp extends BaseTestclass {
 	static Date date1 = new Date();
 
 	public static WebElement findAnyElement(By locator) {
-		System.out.println(driver + "started");
+		
 		return driver.findElement(locator);
 
 	}

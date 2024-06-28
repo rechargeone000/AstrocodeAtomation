@@ -46,7 +46,7 @@ public class BaseTestclass {
 	@BeforeSuite
 	public void beforessuit() {
 		Extentmanagerr.setExtent();
-		DOMConfigurator.configure("log4j.xml");
+		//DOMConfigurator.configure("log4j.xml");
 
 	}
 
@@ -54,6 +54,7 @@ public class BaseTestclass {
 	public void dataconfig() {
 
 		try {
+			DOMConfigurator.configure("log4j.xml");
 			System.out.println(System.getProperty("user.dir") + "\\Configuration\\config.properties");
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
@@ -78,7 +79,7 @@ public class BaseTestclass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		driver.manage().deleteAllCookies();
 
-		driver.get(prop.getProperty("url"));
+		driver.get(prop.getProperty("lmsurl"));
 
 	}
 

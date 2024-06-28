@@ -28,7 +28,7 @@ public class LoginpageTest extends BaseTestclass {
 	@BeforeMethod
 	public void launchbrowser() {
 		loadConfig();
-		System.out.println(ExcelFilePath);
+		
 	}
 
 	@AfterMethod
@@ -37,7 +37,7 @@ public class LoginpageTest extends BaseTestclass {
 		driver.quit();
 	}
 
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	public void loginTestmethod()
 			throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
 		lp = new LoginPage();
@@ -102,6 +102,7 @@ public class LoginpageTest extends BaseTestclass {
 	public void loginforAdmintest() throws IOException, EncryptedDocumentException, InvalidFormatException {
 
 		lp = new LoginPage();
+		Log.info("login admin case is  started");
 
 		try {
 			lp.logincase(prop.getProperty("aduname"), prop.getProperty("adpass"));
@@ -129,6 +130,54 @@ public class LoginpageTest extends BaseTestclass {
 		String Testdescr = ReadExcel.readExcelCell(3, 2);
 		String result = ReadExcel.readExcelCell(3, 3);
 		String Comments = ReadExcel.readExcelCell(3, 4);
+		ReadExcel rc = new ReadExcel();
+
+		if (true)
+
+		{
+
+			rc.startTestcase(testcasename, srno, 3, Testdescr, result, Comments);
+
+		} else {
+
+			rc.startTestcase(testcasename, srno, 3, Testdescr, result, Comments);
+
+		}
+
+	}
+
+	@Test(priority = 4)
+	public void loginforInstructor() throws IOException, EncryptedDocumentException, InvalidFormatException {
+
+		lp = new LoginPage();
+		Log.info("login loginforInstructor case is  started");
+
+		try {
+			lp.logincase("balmukundsahu2706@gmail.com", "1234567");
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		CommonHelp.scrollToElementView(lp.adminlogut);
+		lp.adminlogout();
+		Log.endTestCase("testcase is closed");
+
+		String s = driver.getCurrentUrl();
+		{
+			String S1 = "https://www.asttrolok.com/login";
+			if (s != S1) {
+				driver.get(S1);
+
+			}
+
+		}
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+
+		String srno = ReadExcel.readExcelCell(4, 0);
+		String testcasename = ReadExcel.readExcelCell(4, 1);
+		String Testdescr = ReadExcel.readExcelCell(4, 2);
+		String result = ReadExcel.readExcelCell(4, 3);
+		String Comments = ReadExcel.readExcelCell(4, 4);
 		ReadExcel rc = new ReadExcel();
 
 		if (true)
