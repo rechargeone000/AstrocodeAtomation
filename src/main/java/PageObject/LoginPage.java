@@ -1,5 +1,8 @@
 package PageObject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +15,6 @@ import CommonElements.CommonHelp;
 import baseclass.BaseTestclass;
 
 public class LoginPage extends BaseTestclass {
-
 
 	// IndexPage ip;
 	public By adminlogut = By.xpath("//span[normalize-space()='Logout']");
@@ -49,12 +51,10 @@ public class LoginPage extends BaseTestclass {
 
 		// driver.findElement(By.xpath("//*[@id=\"navbarContent\"]/ul/li[1]/a")).click();
 
-	
-
 	}
-	
+
 	public void clickonhomelink() {
-		
+
 		By homelink = By.xpath("//a[normalize-space()='Home']");
 		CommonHelp.clickOnElement_JS(homelink);
 	}
@@ -104,8 +104,9 @@ public class LoginPage extends BaseTestclass {
 
 		driver.findElement(By.xpath("//span[normalize-space()='Settings']")).click();
 
-		//String usertype = driver.findElement(By.xpath("//span[@class='mt-5 text-gray font-12']")).getText();
-		//System.err.println(usertype);
+		// String usertype = driver.findElement(By.xpath("//span[@class='mt-5 text-gray
+		// font-12']")).getText();
+		// System.err.println(usertype);
 		try {
 			Thread.sleep(4000);
 		} catch (InterruptedException e) {
@@ -116,6 +117,18 @@ public class LoginPage extends BaseTestclass {
 		String emailtext = driver.findElement(By.xpath("//input[@name='email']")).getAttribute("value");
 
 		return emailtext;
+	}
+
+	public List<Object> Verifyinstructorpage() {
+		List<Object> values = new ArrayList<>();
+		boolean displayed = driver.findElement(By.xpath("//h3[@class='font-16 font-weight-500 text-gray mt-25']"))
+				.isDisplayed();
+		String tstacc = driver.findElement(By.xpath("//h3[@class='font-16 font-weight-500 text-gray mt-25']"))
+				.getText();
+		values.add(displayed);
+		values.add(tstacc);
+
+		return values;
 	}
 
 }

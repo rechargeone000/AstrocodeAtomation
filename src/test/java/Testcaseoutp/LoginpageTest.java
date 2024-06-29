@@ -1,6 +1,7 @@
 package Testcaseoutp;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -28,7 +29,7 @@ public class LoginpageTest extends BaseTestclass {
 	@BeforeMethod
 	public void launchbrowser() {
 		loadConfig();
-		
+
 	}
 
 	@AfterMethod
@@ -37,7 +38,7 @@ public class LoginpageTest extends BaseTestclass {
 		driver.quit();
 	}
 
-	//@Test(priority = 1)
+	// @Test(priority = 1)
 	public void loginTestmethod()
 			throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
 		lp = new LoginPage();
@@ -158,8 +159,12 @@ public class LoginpageTest extends BaseTestclass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		CommonHelp.scrollToElementView(lp.adminlogut);
-		lp.adminlogout();
+		List<Object> checktext = lp.Verifyinstructorpage();
+		System.out.print(checktext.get(0));
+		System.out.print(checktext.get(1));
+
+		// CommonHelp.scrollToElementView(lp.adminlogut);
+		// lp.adminlogout();
 		Log.endTestCase("testcase is closed");
 
 		String s = driver.getCurrentUrl();
@@ -174,6 +179,7 @@ public class LoginpageTest extends BaseTestclass {
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 
 		String srno = ReadExcel.readExcelCell(4, 0);
+		int indexno = Integer.parseInt(srno);
 		String testcasename = ReadExcel.readExcelCell(4, 1);
 		String Testdescr = ReadExcel.readExcelCell(4, 2);
 		String result = ReadExcel.readExcelCell(4, 3);
@@ -184,11 +190,11 @@ public class LoginpageTest extends BaseTestclass {
 
 		{
 
-			rc.startTestcase(testcasename, srno, 3, Testdescr, result, Comments);
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 
 		} else {
 
-			rc.startTestcase(testcasename, srno, 3, Testdescr, result, Comments);
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 
 		}
 
