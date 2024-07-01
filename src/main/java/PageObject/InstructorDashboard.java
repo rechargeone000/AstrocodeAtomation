@@ -21,6 +21,12 @@ public class InstructorDashboard extends BaseTestclass {
 
 	}
 
+	public void mypurchasebtn() {
+
+		By purchasetab = By.xpath("//a[normalize-space()='My purchases']");
+		CommonHelp.clickOnElement(purchasetab);
+	}
+
 	public void Clickonthecoursetab() {
 
 		CommonHelp.clickOnElement(coursetab);
@@ -30,6 +36,46 @@ public class InstructorDashboard extends BaseTestclass {
 	public void newtab() {
 
 		CommonHelp.clickOnElement(Course_new);
+	}
+
+	public void mycorsepage() {
+		By.xpath("//a[normalize-space()='My courses']");
+
+		CommonHelp.clickOnElement(Course_new);
+
+	}
+
+	public void invitedcorsepage() {
+		By Invotedcourse = By.xpath("//a[normalize-space()='Invited courses']");
+
+		CommonHelp.clickOnElement(Invotedcourse);
+
+	}
+
+	public void mycoursecomment() {
+
+		By mycoursecomm = By.xpath("//a[normalize-space()='My course comments']");
+		CommonHelp.clickOnElement(mycoursecomm);
+	}
+
+	public void myComments() {
+
+		By mycoursecomm = By.xpath("//a[normalize-space()='My course comments']");
+		CommonHelp.clickOnElement(mycoursecomm);
+	}
+
+	public void mycomments() {
+
+		By mycom = By.xpath("//a[normalize-space()='My comments']");
+		CommonHelp.clickOnElement(mycom);
+
+	}
+
+	public void favorites() {
+
+		By favr = By.xpath("//a[normalize-space()='Favorites']");
+		CommonHelp.clickOnElement(favr);
+
 	}
 
 }

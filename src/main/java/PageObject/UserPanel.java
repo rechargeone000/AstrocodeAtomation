@@ -24,6 +24,9 @@ public class UserPanel extends BaseTestclass {
 	By homebtn = By.xpath("//a[normalize-space()='Home']");
 
 	By supportab = By.xpath("//span[normalize-space()='Support']");
+	
+	
+	
 
 	public void dashboardbtton() {
 		driver.findElement(homebtn).click();
@@ -31,6 +34,11 @@ public class UserPanel extends BaseTestclass {
 		driver.findElement(dashbtnuserpnl).click();
 
 	}
+	
+	
+	
+	
+	
 
 	public void mypurchssection() {
 		// By threedot =
@@ -229,19 +237,16 @@ public class UserPanel extends BaseTestclass {
 		driver.findElement(newTtopics).click();
 	}
 
-	
 	public void bookmarks() {
-		
-		
+
 		By bookmarks = By.xpath("//a[normalize-space()='Bookmarks']");
 		driver.findElement(bookmarks).click();
 
-		
 	}
-	
+
 	public void logoutpageuser() {
-		
-	By logout = By.xpath("//span[normalize-space()='Log out']");
-	driver.findElement(logout).click();
-}
+
+		By logout = By.xpath("//span[normalize-space()='Log out']");
+		driver.findElement(logout).click();
+	}
 }
