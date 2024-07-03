@@ -7,7 +7,7 @@
         <methods>
           <include name="quitbrowser"/>
           <include name="dataconfig"/>
-          <include name="mypurchessetab"/>
+          <include name="requestmeetingadd"/>
           <include name="afterlast"/>
           <include name="beforessuit"/>
           <include name="launchbrowser"/>
