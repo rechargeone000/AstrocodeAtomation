@@ -36,6 +36,9 @@ public class LoginpageTest extends BaseTestclass {
 	public void quitbrowser() {
 
 		driver.quit();
+		ConvertEx cv = new ConvertEx();
+		cv.Genratepdf();
+		
 	}
 
 	// @Test(priority = 1)
@@ -147,7 +150,7 @@ public class LoginpageTest extends BaseTestclass {
 
 	}
 
-	@Test(priority = 4)
+	//@Test(priority = 4)
 	public void loginforInstructor() throws IOException, EncryptedDocumentException, InvalidFormatException {
 
 		lp = new LoginPage();
@@ -199,5 +202,35 @@ public class LoginpageTest extends BaseTestclass {
 		}
 
 	}
+	
+	
+	
+@Test
+public void getr() throws EncryptedDocumentException, InvalidFormatException {
+	ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+
+	String srno = ReadExcel.readExcelCell(4, 0);
+	int indexno = Integer.parseInt(srno);
+	String testcasename = ReadExcel.readExcelCell(4, 1);
+	String Testdescr = ReadExcel.readExcelCell(4, 2);
+	String result = ReadExcel.readExcelCell(4, 3);
+	String Comments = ReadExcel.readExcelCell(4, 4);
+	ReadExcel rc = new ReadExcel();
+
+	if (true)
+
+	{
+
+		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+
+	} else {
+
+		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+
+	}
+	ConvertEx cv = new ConvertEx();
+	cv.Genratepdf();
+	
+}
 
 }

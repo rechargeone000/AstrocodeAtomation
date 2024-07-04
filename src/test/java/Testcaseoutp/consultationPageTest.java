@@ -51,6 +51,7 @@ public class consultationPageTest extends BaseTestclass {
 		Log.info("consultationAstrolisttest is closed");
 
 		System.out.println("Astrologer lis is shown");
+		
 		ReadExcel rc = new ReadExcel();
 		String Testcasename = ReadExcel.readExcelCell(3, 1);
 		String Testcasedescription = ReadExcel.readExcelCell(3, 2);

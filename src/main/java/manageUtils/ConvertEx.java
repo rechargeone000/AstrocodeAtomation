@@ -38,7 +38,7 @@ public class ConvertEx {
 	 * @param args
 	 * @throws Exception
 	 */
-	private static String FILE = "C:\\Users\\dell\\eclipse-workspace\\Asttrokautomation\\src\\test\\resources\\Seleniumreport.pdf";
+	private static String FILE = System.getProperty("user.dir") + "\\src\\test\\resources\\Seleniumreport.xlsx";
 
 	private static Font catFont = new Font(Font.FontFamily.TIMES_ROMAN, 18, Font.BOLD);
 	private static Font redFont = new Font(Font.FontFamily.TIMES_ROMAN, 12, Font.NORMAL, BaseColor.RED);
@@ -49,12 +49,15 @@ public class ConvertEx {
 
 	public void Genratepdf() {
 
-		String excelFile = "C:\\Users\\dell\\eclipse-workspace\\Asttrokautomation\\src\\test\\resources\\Seleniumreport.xlsx";
+		String excelFile = System.getProperty("user.dir") + "\\src\\test\\resources\\Seleniumreport.xlsx";
 
 		File xlsFile = new File(excelFile);
+		
 		Workbook workbook;
 		try {
+			
 			workbook = loadSpreadSheet(xlsFile);
+			
 			readSpreadSheet(workbook);
 			// SendMail s = new SendMail();
 			// Header h= new Header("Header", "SHopkirana");
@@ -62,6 +65,7 @@ public class ConvertEx {
 		} catch (FileNotFoundException e) {
 			System.err.println("Excel File (or) PDF File is already opened. Please close the file");
 			System.exit(1);
+			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -246,7 +250,6 @@ public class ConvertEx {
 		if (ext.equalsIgnoreCase("xlsx")) {
 			InputStream pkg = new FileInputStream(xlsFile);
 			workbook = new HSSFWorkbook(pkg);
-
 			pkg.close();
 		} else if (ext.equalsIgnoreCase("xls")) {
 			InputStream xlsFIS = new FileInputStream(xlsFile);

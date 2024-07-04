@@ -1,109 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-03T19:15:56 IST" name="Default suite" finished-at="2024-07-03T19:16:51 IST" duration-ms="55205">
+  <suite started-at="2024-07-04T18:42:40 IST" name="Default suite" finished-at="2024-07-04T18:43:04 IST" duration-ms="24230">
     <groups>
     </groups>
-    <test started-at="2024-07-03T19:15:56 IST" name="Default test" finished-at="2024-07-03T19:16:51 IST" duration-ms="55205">
-      <class name="Testcaseoutp.InstructorPanelTest">
-        <test-method is-config="true" signature="beforessuit()[pri:0, instance:Testcaseoutp.InstructorPanelTest@4d1c00d0]" started-at="2024-07-03T19:15:56 IST" name="beforessuit" finished-at="2024-07-03T19:15:56 IST" duration-ms="528" status="PASS">
+    <test started-at="2024-07-04T18:42:40 IST" name="Default test" finished-at="2024-07-04T18:43:04 IST" duration-ms="24230">
+      <class name="Testcaseoutp.LoginpageTest">
+        <test-method is-config="true" signature="beforessuit()[pri:0, instance:Testcaseoutp.LoginpageTest@6150c3ec]" started-at="2024-07-04T18:42:40 IST" name="beforessuit" finished-at="2024-07-04T18:42:40 IST" duration-ms="477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforessuit -->
-        <test-method is-config="true" signature="dataconfig()[pri:0, instance:Testcaseoutp.InstructorPanelTest@4d1c00d0]" started-at="2024-07-03T19:15:56 IST" name="dataconfig" finished-at="2024-07-03T19:15:56 IST" duration-ms="76" status="PASS">
+        <test-method is-config="true" signature="dataconfig()[pri:0, instance:Testcaseoutp.LoginpageTest@6150c3ec]" started-at="2024-07-04T18:42:40 IST" name="dataconfig" finished-at="2024-07-04T18:42:40 IST" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataconfig -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.InstructorPanelTest@4d1c00d0]" started-at="2024-07-03T19:15:56 IST" name="launchbrowser" finished-at="2024-07-03T19:16:03 IST" duration-ms="7225" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.LoginpageTest@6150c3ec]" started-at="2024-07-04T18:42:40 IST" name="launchbrowser" finished-at="2024-07-04T18:43:00 IST" duration-ms="19820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="requestmeetingadd()[pri:0, instance:Testcaseoutp.InstructorPanelTest@4d1c00d0]" started-at="2024-07-03T19:16:03 IST" name="requestmeetingadd" finished-at="2024-07-03T19:16:51 IST" duration-ms="47832" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found in the current frame
-  (Session info: chrome=126.0.6478.127)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [22faca444c237c36f56f485396e88e56, clickElement {id=f.2950018D57D23307EB525AD45BFA8B97.d.0E6B6E4DA18A86A3A4D78F4B35CEE8F9.e.182}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:22066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:22066/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (22faca444c237c36f56f485396e88e56)] -> xpath: //div[normalize-space()='12']]
-Session ID: 22faca444c237c36f56f485396e88e56]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=126.0.6478.127)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [22faca444c237c36f56f485396e88e56, clickElement {id=f.2950018D57D23307EB525AD45BFA8B97.d.0E6B6E4DA18A86A3A4D78F4B35CEE8F9.e.182}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:22066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:22066/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (22faca444c237c36f56f485396e88e56)] -> xpath: //div[normalize-space()='12']]
-Session ID: 22faca444c237c36f56f485396e88e56
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at CommonElements.CommonHelp.clickOnElement(CommonHelp.java:111)
-at PageObject.InstructorDashboard.clockminutes(InstructorDashboard.java:163)
-at Testcaseoutp.InstructorPanelTest.requestmeetingadd(InstructorPanelTest.java:183)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method signature="getr()[pri:0, instance:Testcaseoutp.LoginpageTest@6150c3ec]" started-at="2024-07-04T18:43:00 IST" name="getr" finished-at="2024-07-04T18:43:03 IST" duration-ms="2718" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- requestmeetingadd -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.InstructorPanelTest@4d1c00d0]" started-at="2024-07-03T19:16:51 IST" name="quitbrowser" finished-at="2024-07-03T19:16:51 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- getr -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.LoginpageTest@6150c3ec]" started-at="2024-07-04T18:43:03 IST" name="quitbrowser" finished-at="2024-07-04T18:43:04 IST" duration-ms="1554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="aftsetup()[pri:0, instance:Testcaseoutp.InstructorPanelTest@4d1c00d0]" started-at="2024-07-03T19:16:51 IST" name="aftsetup" finished-at="2024-07-03T19:16:51 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="aftsetup()[pri:0, instance:Testcaseoutp.LoginpageTest@6150c3ec]" started-at="2024-07-04T18:43:04 IST" name="aftsetup" finished-at="2024-07-04T18:43:04 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftsetup -->
-        <test-method is-config="true" signature="afterlast()[pri:0, instance:Testcaseoutp.InstructorPanelTest@4d1c00d0]" started-at="2024-07-03T19:16:51 IST" name="afterlast" finished-at="2024-07-03T19:16:53 IST" duration-ms="1143" status="PASS">
+        <test-method is-config="true" signature="afterlast()[pri:0, instance:Testcaseoutp.LoginpageTest@6150c3ec]" started-at="2024-07-04T18:43:04 IST" name="afterlast" finished-at="2024-07-04T18:43:05 IST" duration-ms="784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterlast -->
-      </class> <!-- Testcaseoutp.InstructorPanelTest -->
+      </class> <!-- Testcaseoutp.LoginpageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
