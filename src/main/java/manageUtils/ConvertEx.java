@@ -38,7 +38,7 @@ public class ConvertEx {
 	 * @param args
 	 * @throws Exception
 	 */
-	private static String FILE = System.getProperty("user.dir") + "\\src\\test\\resources\\Seleniumreport.xlsx";
+	private static String FILE = System.getProperty("user.dir") + "\\src\\test\\resources\\Astroreport.pdf";
 
 	private static Font catFont = new Font(Font.FontFamily.TIMES_ROMAN, 18, Font.BOLD);
 	private static Font redFont = new Font(Font.FontFamily.TIMES_ROMAN, 12, Font.NORMAL, BaseColor.RED);
@@ -48,16 +48,16 @@ public class ConvertEx {
 	private static int numberOfColumns;
 
 	public void Genratepdf() {
-
-		String excelFile = System.getProperty("user.dir") + "\\src\\test\\resources\\Seleniumreport.xlsx";
+		System.out.println(FILE);
+		String excelFile = System.getProperty("user.dir") + "\\src\\test\\resources\\Astroreport.xlsx";
 
 		File xlsFile = new File(excelFile);
-		
+
 		Workbook workbook;
 		try {
-			
+
 			workbook = loadSpreadSheet(xlsFile);
-			
+
 			readSpreadSheet(workbook);
 			// SendMail s = new SendMail();
 			// Header h= new Header("Header", "SHopkirana");

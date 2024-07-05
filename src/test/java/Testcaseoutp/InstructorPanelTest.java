@@ -33,7 +33,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		// driver.quit();
 	}
 
-	 @Test(priority=44)
+	// //@Test(priority=44)
 	public void courseopen() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		idb.Clickonthecoursetab();
@@ -53,7 +53,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	 @Test(priority=45)
+	// //@Test(priority=45)
 	public void dashboard() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
@@ -74,7 +74,7 @@ public class InstructorPanelTest extends BaseTestclass {
 
 	}
 
-	@Test(priority=47)
+	// //@Test(priority=47)
 	public void Courses() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
@@ -95,7 +95,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	 @Test(priority=47)
+	// //@Test(priority=47)
 	public void coursemycourse() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		up.dashboardbtton();
@@ -116,7 +116,7 @@ public class InstructorPanelTest extends BaseTestclass {
 
 	}
 
-	 @Test(priority=48)
+	// //@Test(priority=48)
 	public void CoursesMycoursepage() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
@@ -136,7 +136,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	 @Test(priority=49)
+	// //@Test(priority=49)
 	public void mypurchessetab() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		up.courses();
@@ -156,7 +156,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	 @Test(priority=50)
+	// //@Test(priority=50)
 	public void myCoursecomments() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		up.courses();
@@ -176,7 +176,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	 @Test(priority=51)
+	// //@Test(priority=51)
 	public void favtestinst() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		idb.Clickonthecoursetab();
@@ -197,7 +197,7 @@ public class InstructorPanelTest extends BaseTestclass {
 
 	}
 
-	 @Test(priority=52)
+	// //@Test(priority=52)
 	public void CoursebundlesTest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		idb.Coursebundles();
@@ -218,7 +218,7 @@ public class InstructorPanelTest extends BaseTestclass {
 
 	}
 
-	// @Test(priority=53)
+	// //@Test(priority=53)
 	public void NewCoursebundlesTest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		idb.Coursebundles();
@@ -238,8 +238,9 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	// @Test(priority=54)
-	public void MyBundleCoursebundlesTest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+	// //@Test(priority=54)
+	public void MyBundleCoursebundlesTest()
+			throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		idb.Coursebundles();
 		idb.Mybundlescoursebndlepage();
@@ -258,7 +259,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	// (priority=55)
+	// //@Test(priority=55)
 	public void Assigmenttest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		up.Assigmentclick();
@@ -278,7 +279,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	// (priority=56)
+	// //@Test(priority=56)
 	public void myAssigmenttest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		up.Assigmentclick();
@@ -298,7 +299,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-//	@Test(priority=57)
+	// //@Test(priority=57)
 	public void StudentAssigmenttest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		up.Assigmentclick();
@@ -318,7 +319,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-//	@Test(priority=58)
+	// //@Test(priority=58)
 	public void Meetingtest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 
@@ -338,7 +339,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	// @Test(priority=59)
+	// //@Test(priority=59)
 	public void reservationmtingtest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		up.meeting();
@@ -357,7 +358,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	@Test(priority=59)
+	// //@Test(priority=59)
 	public void requestmeeting() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		idb.meetings();
@@ -378,19 +379,31 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	@Test
+	// //@Test(priority = 60)
 	public void requestmeetingadd() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		idb.meetings();
 		idb.setting();
 		idb.settingathreedot();
 		idb.addbutton();
-		//driver.findElement(By.xpath("//label[@for='timeTwelveSwitch']")).click();
+		// driver.findElement(By.xpath("//label[@for='timeTwelveSwitch']")).click();
 		Thread.sleep(2000);
 		idb.Clockthourse();
 		Thread.sleep(2000);
- 
+
 		idb.clockminutes();
+
+		driver.findElement(By.xpath("//label[@for='timeTwelveSwitch']")).click();
+		Thread.sleep(2000);
+
+		idb.Clockthourse2();
+		Thread.sleep(2000);
+		idb.clockminutes2();
+		driver.findElement(By.xpath("//label[@for='timeTwelveSwitch']")).click();
+
+		driver.findElement(By.xpath("//button[@id='saveTime']")).click();
+
+		Boolean ab = driver.findElement(By.xpath("//span[@class='inner-time text-gray font-12']")).isDisplayed();
 		Thread.sleep(2000);
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 		String srno = ReadExcel.readExcelCell(1, 0);
@@ -401,19 +414,71 @@ public class InstructorPanelTest extends BaseTestclass {
 		int indexno = Integer.parseInt(srno);
 
 		ReadExcel rc = new ReadExcel();
+	}
 
-		// System.out.println(email);
-		// Assert.assertEquals(email, prop.getProperty("username"));
-		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
-		//driver.findElement(By.xpath("//label[@for='timeTwelveSwitch']")).click();
-	//	Thread.sleep(2000);
+	// //@Test(priority = 61)
+	public void certificatetest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
+		idb.certificate();
+		Thread.sleep(2000);
 
-		//idb.Clockthourse2();
-		//idb.clockminutes2();
-		
-		//driver.findElement(By.xpath("//textarea[@placeholder='Description (Optional)']")).sendKeys("usertimeexplined");
-		//driver.findElement(By.xpath("//button[@id='saveTime']")).click();
-		//driver.findElement(By.xpath("//label[@for='timeTwelveSwitch']")).click();
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(1, 0);
+		String testcasename = ReadExcel.readExcelCell(1, 1);
+		String Testdescr = ReadExcel.readExcelCell(1, 2);
+		String result = ReadExcel.readExcelCell(1, 3);
+		String Comments = ReadExcel.readExcelCell(1, 4);
+		int indexno = Integer.parseInt(srno);
+
+		ReadExcel rc = new ReadExcel();
+	}
+
+	//@Test(priority = 62)
+	public void certificateList() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+
+		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
+		idb.certificate();
+		idb.certificateList();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(62, 0);
+		String testcasename = ReadExcel.readExcelCell(62, 1);
+		String Testdescr = ReadExcel.readExcelCell(62, 2);
+		String result = ReadExcel.readExcelCell(62, 3);
+		String Comments = ReadExcel.readExcelCell(62, 4);
+		int indexno = Integer.parseInt(srno);
+	}
+
+	//@Test(priority = 63)
+	public void certificate() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+
+		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
+		idb.certificate();
+		idb.achievement();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(62, 0);
+		String testcasename = ReadExcel.readExcelCell(62, 1);
+		String Testdescr = ReadExcel.readExcelCell(62, 2);
+		String result = ReadExcel.readExcelCell(62, 3);
+		String Comments = ReadExcel.readExcelCell(62, 4);
+		int indexno = Integer.parseInt(srno);
+	}
+
+	@Test
+	public void certificateval() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+		System.out.println("certificate");
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+		idb.certificate();
+
+		driver.findElement(By.xpath("//a[normalize-space()='Certificate Validation']")).click();
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(62, 0);
+		String testcasename = ReadExcel.readExcelCell(62, 1);
+		String Testdescr = ReadExcel.readExcelCell(62, 2);
+		String result = ReadExcel.readExcelCell(62, 3);
+		String Comments = ReadExcel.readExcelCell(62, 4);
+		int indexno = Integer.parseInt(srno);
 	}
 
 }

@@ -159,10 +159,11 @@ public class InstructorDashboard extends BaseTestclass {
 
 	public void clockminutes() {
 
-		By clockhours = By.xpath("//div[normalize-space()='12']");
+		By clockhours = By.xpath("//div[normalize-space()='15']");
 		CommonHelp.clickOnElement(clockhours);
 
 	}
+
 	public void Clockthourse2() {
 
 		By addbtn = By.xpath("//div[@class='clockpicker-dial clockpicker-hours']//div[@class='clockpicker-tick'][4]");
@@ -172,8 +173,25 @@ public class InstructorDashboard extends BaseTestclass {
 
 	public void clockminutes2() {
 
-		By clockhours = By.xpath("//div[normalize-space()='55']");
+		By clockhours = By.xpath("//div[normalize-space()='20']");
 		CommonHelp.clickOnElement(clockhours);
 
 	}
+
+	public void certificate() {
+
+		By clockhours = By.xpath("//span[normalize-space()='Certificates']");
+		CommonHelp.clickOnElement(clockhours);
+
+	}
+	public void certificateList() {
+
+		driver.findElement(By.xpath("//a[@href='/panel/certificates']")).click();
+	}
+	
+	public void achievement() {
+		
+		driver.findElement(By.xpath("//a[normalize-space()='Achievements']")).click();
+	}
+
 }

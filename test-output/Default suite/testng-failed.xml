@@ -7,8 +7,9 @@
         <methods>
           <include name="quitbrowser"/>
           <include name="dataconfig"/>
-          <include name="requestmeetingadd"/>
+          <include name="certificate"/>
           <include name="afterlast"/>
+          <include name="certificateList"/>
           <include name="beforessuit"/>
           <include name="launchbrowser"/>
           <include name="aftsetup"/>
