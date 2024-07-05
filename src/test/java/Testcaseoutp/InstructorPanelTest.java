@@ -33,7 +33,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		// driver.quit();
 	}
 
-	// @Test(priority=44)
+	 @Test(priority=44)
 	public void courseopen() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		idb.Clickonthecoursetab();
@@ -53,7 +53,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	// @Test(priority=45)
+	 @Test(priority=45)
 	public void dashboard() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
@@ -74,7 +74,7 @@ public class InstructorPanelTest extends BaseTestclass {
 
 	}
 
-	// @Test(priority=47)
+	@Test(priority=47)
 	public void Courses() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
@@ -95,7 +95,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	// @Test(priority=47)
+	 @Test(priority=47)
 	public void coursemycourse() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		up.dashboardbtton();
@@ -116,7 +116,7 @@ public class InstructorPanelTest extends BaseTestclass {
 
 	}
 
-	// @Test(priority=48)
+	 @Test(priority=48)
 	public void CoursesMycoursepage() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
@@ -136,7 +136,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	// @Test(priority=49)
+	 @Test(priority=49)
 	public void mypurchessetab() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		up.courses();
@@ -156,7 +156,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	// @Test(priority=50)
+	 @Test(priority=50)
 	public void myCoursecomments() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		up.courses();
@@ -176,7 +176,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
 
-	// @Test(priority=51)
+	 @Test(priority=51)
 	public void favtestinst() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		idb.Clickonthecoursetab();
@@ -194,11 +194,10 @@ public class InstructorPanelTest extends BaseTestclass {
 		// System.out.println(email);
 		// Assert.assertEquals(email, prop.getProperty("username"));
 		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
-		Thread.sleep(3000);
 
 	}
 
-	// @Test(priority=52)
+	 @Test(priority=52)
 	public void CoursebundlesTest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
 		idb.Coursebundles();
