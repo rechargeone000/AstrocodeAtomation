@@ -433,7 +433,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		ReadExcel rc = new ReadExcel();
 	}
 
-	//@Test(priority = 62)
+	// @Test(priority = 62)
 	public void certificateList() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");
@@ -449,7 +449,7 @@ public class InstructorPanelTest extends BaseTestclass {
 		int indexno = Integer.parseInt(srno);
 	}
 
-	//@Test(priority = 63)
+	// @Test(priority = 63)
 	public void certificate() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase("balmukundsahu2706@gmail.com", "1234567");

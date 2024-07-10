@@ -103,6 +103,8 @@ public class BaseTestclass {
 	@AfterSuite
 	public void afterlast() {
 		Extentmanagerr.endReport();
+		ConvertEx cv = new ConvertEx();
+		cv.Genratepdf();
 
 	}
 

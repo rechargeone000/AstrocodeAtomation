@@ -184,14 +184,188 @@ public class InstructorDashboard extends BaseTestclass {
 		CommonHelp.clickOnElement(clockhours);
 
 	}
+
 	public void certificateList() {
 
 		driver.findElement(By.xpath("//a[@href='/panel/certificates']")).click();
 	}
-	
+
 	public void achievement() {
-		
+
 		driver.findElement(By.xpath("//a[normalize-space()='Achievements']")).click();
+	}
+
+	public void CertificateValidation() {
+
+		driver.findElement(By.xpath("//a[normalize-space()='Certificate Validation']")).click();
+	}
+
+	public void CompletionValidation() {
+
+		driver.findElement(By.xpath("//a[normalize-space()='Completion Certificates']")).click();
+	}
+
+	public void TabnFinancial() {
+
+		driver.findElement(By.xpath("//span[normalize-space()='Financial']")).click();
+	}
+
+	public void Salesreport() {
+
+		driver.findElement(By.xpath("//a[normalize-space()='Sales report']")).click();
+	}
+
+	public void finacsummary() {
+
+		driver.findElement(By.xpath("//a[normalize-space()='Financial summary']")).click();
+
+	}
+
+	public void finacPayout() {
+
+		driver.findElement(By.xpath("//a[normalize-space()='Payout']")).click();
+
+	}
+
+	public void AddWalletMoney() {
+
+		driver.findElement(By.xpath("//li[@class='mt-5 ']//a[normalize-space()='Add Wallet Money']")).click();
+
+	}
+
+	public void AddSubscribe() {
+
+		driver.findElement(By.xpath("//a[normalize-space()='Subscribe']")).click();
+
+	}
+
+	public void Installments() {
+
+		driver.findElement(By.xpath("//a[normalize-space()='Installments']")).click();
+
+	}
+
+	public void support() {
+		driver.findElement(By.xpath("//span[normalize-space()='Support']")).click();
+
+	}
+
+	public void supportnew() {
+
+		driver.findElement(By.xpath("//a[@href='/panel/support/new']")).click();
+	}
+
+	public void supportnewsupport() {
+
+		driver.findElement(By.xpath("//a[normalize-space()='Courses support']")).click();
+	}
+
+	public void supportnewTickets() {
+
+		driver.findElement(By.xpath("//a[normalize-space()='Tickets']")).click();
+	}
+
+	public void supportMarketing() {
+		driver.findElement(By.xpath("//span[normalize-space()='Marketing']")).click();
+
+	}
+
+	public void MarkDiscounts() {
+		driver.findElement(By.xpath("//a[normalize-space()='Discounts']")).click();
+
+	}
+
+	public void supportPromotions() {
+		driver.findElement(By.xpath("//a[normalize-space()='Promotions']")).click();
+
+	}
+
+
+
+	public void supportForums() {
+		driver.findElement(By.xpath("//span[normalize-space()='Forums']")).click();
+
+	}
+
+	public void ForumsTopic() {
+		driver.findElement(By.xpath("//a[normalize-space()='New Topic']")).click();
+
+	}
+
+	public void ForumsmyTopic() {
+		driver.findElement(By.xpath("//a[normalize-space()='My Topics']")).click();
+
+	}
+
+	public void ForumsmyPosts() {
+		driver.findElement(By.xpath("//a[normalize-space()='My Posts']")).click();
+
+	}
+
+	public void ForumsmyBookmarks() {
+		driver.findElement(By.xpath("//a[normalize-space()='Bookmarks']")).click();
+
+	}
+
+	public void ForumsmyArticles() {
+		driver.findElement(By.xpath("//span[normalize-space()='Articles']")).click();
+
+	}
+
+	public void ForumsnewArticles() {
+		driver.findElement(By.xpath("//a[normalize-space()='New Article']")).click();
+
+	}
+
+	public void ForumsnewArticlesComments() {
+		driver.findElement(By.xpath("//a[normalize-space()='Comments']")).click();
+
+	}
+
+	public void ForumsnewArticlesNoticeboard() {
+		driver.findElement(By.xpath("//span[normalize-space()='Noticeboard']")).click();
+
+	}
+
+	public void HistoryNoticeboard() {
+
+		driver.findElement(By.xpath("	//a[normalize-space()='History']")).click();
+	}
+
+	public void HistoryNoticeboardnew() {
+
+		driver.findElement(By.xpath("//a[normalize-space()='Course Notices']")).click();
+
+	}
+
+	public void newcourseNoticeboardnew() {
+
+		driver.findElement(By.xpath("//a[normalize-space()='New course notice']")).click();
+
+	}
+
+	public void inssNotifications() {
+
+		driver.findElement(By.xpath("//span[normalize-space()='Notifications']")).click();
+		// span[normalize-space()='Settings']
+	}
+
+	public void inspanelSettings() {
+
+		driver.findElement(By.xpath("//span[normalize-space()='Settings']")).click();
+
+	}
+
+	public void usserpanellogout() {
+
+		driver.findElement(By.xpath("//span[normalize-space()='Log out']")).click();
+
+	}
+
+	public void Profileuser() {
+
+		driver.findElement(By.xpath("//span[normalize-space()='My Profile']")).click();
+
 	}
 
 }

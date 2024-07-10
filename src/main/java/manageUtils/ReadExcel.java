@@ -32,7 +32,7 @@ public class ReadExcel {
 	private XSSFCell RowCell;
 	private static DataFormatter format = new DataFormatter();
 	String filename1 = "Backend_PO_Result";
-	String fileName = System.getProperty("user.dir")+"\\src\\test\\resources\\Astroreport.xlsx";
+	String fileName = System.getProperty("user.dir")+"\\src\\test\\resources\\Astro.xlsx";
 
 	// String
 	// fileName="C:\\Users\\SK\\Desktop\\SKBACKEND\\SKBACKEND-PO\\test-output\\TestCaseResult\\Poresult.xls";
