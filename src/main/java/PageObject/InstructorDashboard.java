@@ -365,5 +365,7 @@ public class InstructorDashboard extends BaseTestclass {
 		driver.findElement(By.xpath("//span[normalize-space()='My Profile']")).click();
 
 	}
+	
+	//profile user get
 
 }
