@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcaseoutp.LoginpageTest">
+      <class name="Testcaseoutp.InstructorPanelTest">
         <methods>
-          <include name="dataconfig"/>
-          <include name="afterlast"/>
-          <include name="launchbrowser"/>
-          <include name="beforessuit"/>
           <include name="quitbrowser"/>
-          <include name="loginforInstructor"/>
+          <include name="dataconfig"/>
+          <include name="comletioncertificatetest"/>
+          <include name="afterlast"/>
+          <include name="beforessuit"/>
+          <include name="launchbrowser"/>
           <include name="aftsetup"/>
         </methods>
-      </class> <!-- Testcaseoutp.LoginpageTest -->
+      </class> <!-- Testcaseoutp.InstructorPanelTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

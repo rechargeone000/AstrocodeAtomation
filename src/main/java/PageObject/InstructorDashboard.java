@@ -200,7 +200,7 @@ public class InstructorDashboard extends BaseTestclass {
 		driver.findElement(By.xpath("//a[normalize-space()='Certificate Validation']")).click();
 	}
 
-	public void CompletionValidation() {
+	public void Completioncerticate() {
 
 		driver.findElement(By.xpath("//a[normalize-space()='Completion Certificates']")).click();
 	}
@@ -255,7 +255,7 @@ public class InstructorDashboard extends BaseTestclass {
 		driver.findElement(By.xpath("//a[@href='/panel/support/new']")).click();
 	}
 
-	public void supportnewsupport() {
+	public void supportCoursesupport() {
 
 		driver.findElement(By.xpath("//a[normalize-space()='Courses support']")).click();
 	}
@@ -275,19 +275,17 @@ public class InstructorDashboard extends BaseTestclass {
 
 	}
 
-	public void supportPromotions() {
+	public void marktPromotions() {
 		driver.findElement(By.xpath("//a[normalize-space()='Promotions']")).click();
 
 	}
 
-
-
-	public void supportForums() {
+	public void instructorForums() {
 		driver.findElement(By.xpath("//span[normalize-space()='Forums']")).click();
 
 	}
 
-	public void ForumsTopic() {
+	public void newForumsTopic() {
 		driver.findElement(By.xpath("//a[normalize-space()='New Topic']")).click();
 
 	}
