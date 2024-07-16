@@ -535,7 +535,7 @@ public class InstructorPanelTest extends BaseTestclass {
 
 	}
 
-	@Test(priority = 68)
+	@Test(priority = 69)
 	public void FinSalesreportl() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
@@ -552,7 +552,7 @@ public class InstructorPanelTest extends BaseTestclass {
 
 	}
 
-	@Test(priority = 69)
+	@Test(priority = 70)
 	public void Finfinacsummary() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
@@ -560,64 +560,64 @@ public class InstructorPanelTest extends BaseTestclass {
 		idb.finacsummary();
 
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		String srno = ReadExcel.readExcelCell(68, 0);
-		String testcasename = ReadExcel.readExcelCell(68, 1);
-		String Testdescr = ReadExcel.readExcelCell(68, 2);
-		String result = ReadExcel.readExcelCell(68, 3);
-		String Comments = ReadExcel.readExcelCell(68, 4);
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
 		int indexno = Integer.parseInt(srno);
 
 	}
 
-	@Test(priority = 70)
+	@Test(priority = 71)
 	public void FinfinfinacPayout() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
 		idb.TabnFinancial();
 		idb.finacPayout();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		String srno = ReadExcel.readExcelCell(68, 0);
-		String testcasename = ReadExcel.readExcelCell(68, 1);
-		String Testdescr = ReadExcel.readExcelCell(68, 2);
-		String result = ReadExcel.readExcelCell(68, 3);
-		String Comments = ReadExcel.readExcelCell(68, 4);
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
 		int indexno = Integer.parseInt(srno);
 
 	}
 
-	@Test(priority = 71)
+	@Test(priority = 72)
 	public void FinfinAddWalletMoney() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
 		idb.TabnFinancial();
 		idb.AddWalletMoney();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		String srno = ReadExcel.readExcelCell(68, 0);
-		String testcasename = ReadExcel.readExcelCell(68, 1);
-		String Testdescr = ReadExcel.readExcelCell(68, 2);
-		String result = ReadExcel.readExcelCell(68, 3);
-		String Comments = ReadExcel.readExcelCell(68, 4);
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
 		int indexno = Integer.parseInt(srno);
 
 	}
 
-	@Test(priority = 72)
+	@Test(priority = 73)
 	public void FinfinAddSubscribe() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
 		idb.TabnFinancial();
 		idb.AddSubscribe();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		String srno = ReadExcel.readExcelCell(68, 0);
-		String testcasename = ReadExcel.readExcelCell(68, 1);
-		String Testdescr = ReadExcel.readExcelCell(68, 2);
-		String result = ReadExcel.readExcelCell(68, 3);
-		String Comments = ReadExcel.readExcelCell(68, 4);
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
 		int indexno = Integer.parseInt(srno);
 
 	}
 
-	@Test(priority = 73)
+	@Test(priority = 74)
 	public void FinfinInstallments() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
@@ -625,32 +625,32 @@ public class InstructorPanelTest extends BaseTestclass {
 		idb.TabnFinancial();
 		idb.Installments();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		String srno = ReadExcel.readExcelCell(68, 0);
-		String testcasename = ReadExcel.readExcelCell(68, 1);
-		String Testdescr = ReadExcel.readExcelCell(68, 2);
-		String result = ReadExcel.readExcelCell(68, 3);
-		String Comments = ReadExcel.readExcelCell(68, 4);
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
 		int indexno = Integer.parseInt(srno);
 
 	}
 
-	@Test(priority = 74)
+	@Test(priority = 75)
 	public void support() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
 
 		idb.support();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		String srno = ReadExcel.readExcelCell(68, 0);
-		String testcasename = ReadExcel.readExcelCell(68, 1);
-		String Testdescr = ReadExcel.readExcelCell(68, 2);
-		String result = ReadExcel.readExcelCell(68, 3);
-		String Comments = ReadExcel.readExcelCell(68, 4);
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
 		int indexno = Integer.parseInt(srno);
 
 	}
 
-	@Test(priority = 75)
+	@Test(priority = 76)
 	public void supportnewtest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
@@ -658,16 +658,16 @@ public class InstructorPanelTest extends BaseTestclass {
 		idb.support();
 		idb.supportnew();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		String srno = ReadExcel.readExcelCell(68, 0);
-		String testcasename = ReadExcel.readExcelCell(68, 1);
-		String Testdescr = ReadExcel.readExcelCell(68, 2);
-		String result = ReadExcel.readExcelCell(68, 3);
-		String Comments = ReadExcel.readExcelCell(68, 4);
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
 		int indexno = Integer.parseInt(srno);
 
 	}
 
-	@Test(priority = 76)
+	@Test(priority = 77)
 	public void supportnewscourseupporttest()
 			throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
@@ -677,16 +677,16 @@ public class InstructorPanelTest extends BaseTestclass {
 		idb.supportCoursesupport();
 		;
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		String srno = ReadExcel.readExcelCell(68, 0);
-		String testcasename = ReadExcel.readExcelCell(68, 1);
-		String Testdescr = ReadExcel.readExcelCell(68, 2);
-		String result = ReadExcel.readExcelCell(68, 3);
-		String Comments = ReadExcel.readExcelCell(68, 4);
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
 		int indexno = Integer.parseInt(srno);
 
 	}
 
-	@Test(priority = 77)
+	@Test(priority = 78)
 	public void supportnewTicketsttest()
 			throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
@@ -695,32 +695,32 @@ public class InstructorPanelTest extends BaseTestclass {
 		idb.support();
 		idb.supportnewTickets();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		String srno = ReadExcel.readExcelCell(68, 0);
-		String testcasename = ReadExcel.readExcelCell(68, 1);
-		String Testdescr = ReadExcel.readExcelCell(68, 2);
-		String result = ReadExcel.readExcelCell(68, 3);
-		String Comments = ReadExcel.readExcelCell(68, 4);
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
 		int indexno = Integer.parseInt(srno);
 
 	}
 
-	@Test(priority = 78)
+	@Test(priority = 79)
 	public void supportMarketingtest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
 
 		idb.supportMarketing();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		String srno = ReadExcel.readExcelCell(68, 0);
-		String testcasename = ReadExcel.readExcelCell(68, 1);
-		String Testdescr = ReadExcel.readExcelCell(68, 2);
-		String result = ReadExcel.readExcelCell(68, 3);
-		String Comments = ReadExcel.readExcelCell(68, 4);
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
 		int indexno = Integer.parseInt(srno);
 
 	}
 
-	@Test(priority = 79)
+	@Test(priority = 80)
 	public void sMarketingMarkDiscountstest()
 			throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
@@ -729,69 +729,321 @@ public class InstructorPanelTest extends BaseTestclass {
 		idb.supportMarketing();
 		idb.MarkDiscounts();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		String srno = ReadExcel.readExcelCell(68, 0);
-		String testcasename = ReadExcel.readExcelCell(68, 1);
-		String Testdescr = ReadExcel.readExcelCell(68, 2);
-		String result = ReadExcel.readExcelCell(68, 3);
-		String Comments = ReadExcel.readExcelCell(68, 4);
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
 		int indexno = Integer.parseInt(srno);
 
 	}
 
-	
-	@Test(priority = 80)
-	public void marktPromotionss()
-			throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+	@Test(priority = 81)
+	public void marktPromotionss() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
 
 		idb.supportMarketing();
 		idb.marktPromotions();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		String srno = ReadExcel.readExcelCell(68, 0);
-		String testcasename = ReadExcel.readExcelCell(68, 1);
-		String Testdescr = ReadExcel.readExcelCell(68, 2);
-		String result = ReadExcel.readExcelCell(68, 3);
-		String Comments = ReadExcel.readExcelCell(68, 4);
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
 		int indexno = Integer.parseInt(srno);
 
 	}
-	
-	@Test(priority = 81)
-	public void forum()
-			throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
-		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
-
-		idb.instructorForums();
-		
-		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		String srno = ReadExcel.readExcelCell(68, 0);
-		String testcasename = ReadExcel.readExcelCell(68, 1);
-		String Testdescr = ReadExcel.readExcelCell(68, 2);
-		String result = ReadExcel.readExcelCell(68, 3);
-		String Comments = ReadExcel.readExcelCell(68, 4);
-		int indexno = Integer.parseInt(srno);
-
-	}
 	@Test(priority = 82)
-	public void forumnewForumsTopic()
-			throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+	public void forum() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+
+		idb.instructorForums();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(81, 0);
+		String testcasename = ReadExcel.readExcelCell(81, 1);
+		String Testdescr = ReadExcel.readExcelCell(81, 2);
+		String result = ReadExcel.readExcelCell(81, 3);
+		String Comments = ReadExcel.readExcelCell(81, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}
+
+	@Test(priority = 83)
+	public void forumnewForumsTopic() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
 		idb.instructorForums();
-		
-		
+		idb.ForumsmyTopic();
+
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
-		String srno = ReadExcel.readExcelCell(68, 0);
-		String testcasename = ReadExcel.readExcelCell(68, 1);
-		String Testdescr = ReadExcel.readExcelCell(68, 2);
-		String result = ReadExcel.readExcelCell(68, 3);
-		String Comments = ReadExcel.readExcelCell(68, 4);
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}
+
+	@Test(priority = 83)
+	public void forumnewBookmark() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+		idb.instructorForums();
+		idb.ForumsmyBookmarks();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}
+
+	@Test(priority = 84)
+	public void Articles() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+		idb.ForumsmyArticles();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}
+
+	@Test(priority = 85)
+	public void Articlesnewart() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+		idb.ForumsmyArticles();
+		idb.ForumsnewArticles();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}
+
+	@Test(priority = 86)
+	public void ArticlComments() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+		idb.ForumsmyArticles();
+		idb.ForumsnewArticlesComments();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}
+
+	@Test(priority = 86)
+	public void Noticeboardtest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+
+		idb.Noticeboard();
+		;
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}
+
+	@Test(priority = 86)
+	public void Noticeboardtesto() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+
+		idb.Noticeboard();
+		;
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}
+
+	@Test(priority = 86)
+	public void Noticeboardhistorytesto()
+			throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+
+		idb.Noticeboard();
+		idb.HistoryNoticeboardnew();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}
+
+	@Test(priority = 86)
+	public void Noticeboardhistorytest()
+			throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+
+		idb.Noticeboard();
+		idb.HistoryNoticeboard();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}
+	@Test(priority = 86)
+	public void Noticeboarnewcourse()
+			throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+
+		idb.Noticeboard();
+		idb.newcourseNoticeboardnew();;
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
 		int indexno = Integer.parseInt(srno);
 
 	}
 	
+	@Test(priority = 86)
+	public void Noticeboarnewcoursenot()
+			throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+
+		idb.Noticeboard();
+		idb.newcourseNoticeboardnew();;
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}  
+	
+	@Test(priority = 86)
+	public void Noticeboarcourse()
+			throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+
+		idb.Noticeboard();
+		idb.HistoryNoticeboardnew();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}
+	
+	
+	
+	@Test(priority = 86)
+	public void  notificationinst() throws InterruptedException, EncryptedDocumentException, InvalidFormatException
+			{
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+
+		idb.Noticeboard();
+		idb.inssNotifications();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}
+	
+	
+
+	@Test(priority = 87)
+	public void  inspanelSettingstest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException
+			{
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+
+		idb.inspanelSettings();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}
+	
+	@Test(priority = 87)
+	public void  Profileusertest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException
+			{
+
+		lp.logincase(prop.getProperty("instuser"), prop.getProperty("passworddinst"));
+
+		idb.Profileuser();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+		String srno = ReadExcel.readExcelCell(82, 0);
+		String testcasename = ReadExcel.readExcelCell(82, 1);
+		String Testdescr = ReadExcel.readExcelCell(82, 2);
+		String result = ReadExcel.readExcelCell(82, 3);
+		String Comments = ReadExcel.readExcelCell(82, 4);
+		int indexno = Integer.parseInt(srno);
+
+	}
 	
 	
 }

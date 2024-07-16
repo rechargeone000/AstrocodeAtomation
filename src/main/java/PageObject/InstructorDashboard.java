@@ -320,7 +320,7 @@ public class InstructorDashboard extends BaseTestclass {
 
 	}
 
-	public void ForumsnewArticlesNoticeboard() {
+	public void Noticeboard() {
 		driver.findElement(By.xpath("//span[normalize-space()='Noticeboard']")).click();
 
 	}

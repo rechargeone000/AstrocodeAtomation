@@ -5,13 +5,26 @@
     <classes>
       <class name="Testcaseoutp.InstructorPanelTest">
         <methods>
+          <include name="Finfinacsummary"/>
+          <include name="sMarketingMarkDiscountstest"/>
+          <include name="afterlast"/>
+          <include name="FinfinInstallments"/>
+          <include name="forumnewForumsTopic"/>
+          <include name="forum"/>
+          <include name="supportMarketingtest"/>
+          <include name="supportnewscourseupporttest"/>
+          <include name="beforessuit"/>
+          <include name="FinfinAddSubscribe"/>
+          <include name="aftsetup"/>
           <include name="quitbrowser"/>
           <include name="dataconfig"/>
-          <include name="comletioncertificatetest"/>
-          <include name="afterlast"/>
-          <include name="beforessuit"/>
+          <include name="FinfinfinacPayout"/>
+          <include name="FinfinAddWalletMoney"/>
+          <include name="marktPromotionss"/>
+          <include name="support"/>
           <include name="launchbrowser"/>
-          <include name="aftsetup"/>
+          <include name="supportnewtest"/>
+          <include name="supportnewTicketsttest"/>
         </methods>
       </class> <!-- Testcaseoutp.InstructorPanelTest -->
     </classes>

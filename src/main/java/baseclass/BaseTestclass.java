@@ -79,7 +79,7 @@ public class BaseTestclass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		driver.manage().deleteAllCookies();
 
-		driver.get(prop.getProperty("url"));
+		driver.get(prop.getProperty("lmsurl"));
 
 	}
 
