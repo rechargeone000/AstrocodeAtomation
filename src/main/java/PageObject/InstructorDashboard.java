@@ -365,7 +365,19 @@ public class InstructorDashboard extends BaseTestclass {
 		driver.findElement(By.xpath("//span[normalize-space()='My Profile']")).click();
 
 	}
+
+	// profile user get
+
+	public void getprofilenametitle() {
+
+		driver.findElement(By.xpath("//div[@class='d-flex flex-column align-items-center justify-content-center']"))
+				.click();
+	}
 	
-	//profile user get
+	public void	checkprofile(){
+		
+		driver.findElement(By.xpath("//span[@class='mt-5 text-gray font-12']")).click();
+		
+	}
 
 }

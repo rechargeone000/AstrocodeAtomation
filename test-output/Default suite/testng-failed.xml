@@ -5,26 +5,47 @@
     <classes>
       <class name="Testcaseoutp.InstructorPanelTest">
         <methods>
-          <include name="Finfinacsummary"/>
+          <include name="profilename"/>
+          <include name="inspanelSettingstest"/>
           <include name="sMarketingMarkDiscountstest"/>
           <include name="afterlast"/>
+          <include name="logout"/>
+          <include name="supportMarketingtest"/>
+          <include name="FinSalesreportl"/>
+          <include name="beforessuit"/>
+          <include name="Articlesnewart"/>
+          <include name="Profileusertest"/>
+          <include name="Noticeboardtesto"/>
+          <include name="Articles"/>
+          <include name="checkuser"/>
+          <include name="comletionSalesreportl"/>
+          <include name="marktPromotionss"/>
+          <include name="support"/>
+          <include name="forumnewBookmark"/>
+          <include name="launchbrowser"/>
+          <include name="supportnewTicketsttest"/>
+          <include name="Noticeboarnewcoursenot"/>
+          <include name="comletioncertificatetest"/>
+          <include name="Finfinacsummary"/>
           <include name="FinfinInstallments"/>
           <include name="forumnewForumsTopic"/>
           <include name="forum"/>
-          <include name="supportMarketingtest"/>
+          <include name="Noticeboarcourse"/>
+          <include name="Noticeboardhistorytesto"/>
           <include name="supportnewscourseupporttest"/>
-          <include name="beforessuit"/>
+          <include name="Noticeboardtest"/>
           <include name="FinfinAddSubscribe"/>
+          <include name="Noticeboardhistorytest"/>
           <include name="aftsetup"/>
           <include name="quitbrowser"/>
           <include name="dataconfig"/>
           <include name="FinfinfinacPayout"/>
           <include name="FinfinAddWalletMoney"/>
-          <include name="marktPromotionss"/>
-          <include name="support"/>
-          <include name="launchbrowser"/>
+          <include name="notificationinst"/>
+          <include name="Noticeboarnewcourse"/>
           <include name="supportnewtest"/>
-          <include name="supportnewTicketsttest"/>
+          <include name="comletionTabnFinancial"/>
+          <include name="ArticlComments"/>
         </methods>
       </class> <!-- Testcaseoutp.InstructorPanelTest -->
     </classes>
