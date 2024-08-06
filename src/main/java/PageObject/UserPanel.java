@@ -24,6 +24,7 @@ public class UserPanel extends BaseTestclass {
 	By homebtn = By.xpath("//a[normalize-space()='Home']");
 
 	By supportab = By.xpath("//span[normalize-space()='Support']");
+	By supnew = By.xpath("//a[normalize-space()='New']");
 
 	public void dashboardbtton() {
 		driver.findElement(homebtn).click();
@@ -184,9 +185,8 @@ public class UserPanel extends BaseTestclass {
 		driver.findElement(supportab).click();
 	}
 
-	public void newtab() {
+	public void sunewtab() {
 
-		By supnew = By.xpath("//a[normalize-space()='New']");
 		driver.findElement(supnew).click();
 	}
 
@@ -241,4 +241,47 @@ public class UserPanel extends BaseTestclass {
 		By logout = By.xpath("//span[normalize-space()='Log out']");
 		driver.findElement(logout).click();
 	}
+
+	public void Createticket() {
+
+		By SubJect = By.xpath("//input[@name='title']");
+		By coursedrop = By.xpath("(//span[@class='select2-selection__rendered'])[2]");
+		By messagebox = By.xpath("//textarea[@name='message']");
+
+		By supporttype = By.xpath("//select[@id='supportType']");
+
+		driver.findElement(SubJect).sendKeys("CreateTicket" + Math.random());
+		CommonHelp.SelectDropdown(supporttype, "Course support");
+
+		driver.findElement(coursedrop).click();
+		By drop = By.xpath("//ul[@class='select2-results__options']");
+
+		CommonHelp.Select_Item_list(drop, "Free Astrology Course (Hindi) - Mr.Alok Khandelwal");
+		driver.findElement(By.xpath("//textarea[@name='message']")).sendKeys("create newticoket");
+	}
+
+	public void Createticketwithattachment() {
+
+		By SubJect = By.xpath("//input[@name='title']");
+		By coursedrop = By.xpath("//span[@id='select2-webinar_id-ez-container']");
+		By messagebox = By.xpath("//textarea[@name='message']");
+
+		// driver.findElement(SubJect).sendKeys("CreateTicket"+Math.random());
+		// CommonHelp.selectInDropdownByValue(SubJect, "Course support");
+		CommonHelp.selectdropdownbyindex(SubJect, 0);
+
+		CommonHelp.Select_Item_list(coursedrop, "Free Astrology Course (Hindi) - Mr.Alok Khandelwal");
+		driver.findElement(By.xpath("//textarea[@name='message']")).sendKeys("create newticoket");
+
+		driver.findElement(By.xpath("//button[@class='input-group-text panel-file-manager']//*[name()='svg']"));
+	}
+
+	public void clickonsendmessagbtn() {
+
+		By sendmsgbtn = By.xpath("//button[@type='submit']");
+
+		driver.findElement(sendmsgbtn).click();
+
+	}
+
 }

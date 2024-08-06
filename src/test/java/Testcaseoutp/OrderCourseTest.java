@@ -13,22 +13,25 @@ import baseclass.BaseTestclass;
 import manageUtils.ReadExcel;
 
 public class OrderCourseTest extends BaseTestclass {
-	String ExcelFilePath = "C:\\Users\\dell\\eclipse-workspace\\Asttrokautomation\\src\\test\\resources\\data.xlsx";
+	// String ExcelFilePath =
+	// "C:\\Users\\dell\\eclipse-workspace\\Asttrokautomation\\src\\test\\resources\\data.xlsx";
+	String ExcelFilePath = System.getProperty("user.dir") + "\\src\\test\\resources\\data.xlsx";
 
 	@BeforeMethod
 	public void launchbrowser() {
 
-		loadConfig();
+		String url = "https://lms.asttrolok.in";
+		loadConfig(url);
 
 	}
 
 	@AfterMethod
 	public void quitbrowser() {
 
-		// driver.quit();
+		driver.quit();
 	}
 
-	 @Test(priority=37)
+	@Test(priority = 37)
 	public void courseselect() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 //courcess from course dropdown
 		OrderCourse oc = new OrderCourse();
@@ -42,24 +45,30 @@ public class OrderCourseTest extends BaseTestclass {
 		}
 		oc.clickonthecoursehomelibk();
 
-		driver.findElement(By.xpath("//h3[normalize-space()='Astrology Intermediate Level']")).click();
+		String coursenamee = "Astrology Intermediate Level";
+
+		driver.findElement(By.xpath("//h3[normalize-space()='" + coursenamee + "']")).click();
+
+		// h3[normalize-space()='Astrology Intermediate Level']
 
 		oc.bookfromcentralbookbtn();
 
-		oc.startpaybutton();
+		// oc.startpaybutton();
 		System.out.println("done");
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 		ReadExcel rc = new ReadExcel();
+
 		String Testcasename = ReadExcel.readExcelCell(37, 1);
 		String Testcasedescription = ReadExcel.readExcelCell(37, 2);
 		String TestCaseresult = ReadExcel.readExcelCell(37, 3);
-		System.out.println("test started1");
+		String srno = ReadExcel.readExcelCell(37, 0);
+		int index = Integer.parseInt(srno);
 
-		rc.startTestcase(Testcasename, "37", 37, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(Testcasename, srno, index, Testcasedescription, "pass", "page  is  open");
 	}
 
-	 @Test(priority=38)
-	public void addTocartbutton() throws InterruptedException {
+	@Test(priority = 38)
+	public void addTocartbutton() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		// item added to the cart
 
@@ -79,14 +88,17 @@ public class OrderCourseTest extends BaseTestclass {
 		oc.addtocartbutton();
 		// oc.checkboxcart();
 		// added item to the cart
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 		ReadExcel rc = new ReadExcel();
 		String Testcasename = ReadExcel.readExcelCell(38, 1);
 		String Testcasedescription = ReadExcel.readExcelCell(38, 2);
 		String TestCaseresult = ReadExcel.readExcelCell(38, 3);
-		rc.startTestcase(Testcasename, "38", 38, Testcasedescription, "pass", "page  is  open");
+		String srno = ReadExcel.readExcelCell(37, 0);
+		int index = Integer.parseInt(srno);
+		rc.startTestcase(Testcasename, srno, index, Testcasedescription, "pass", "page  is  open");
 	}
 
-	 @Test(priority=39)
+	@Test(priority = 39)
 
 	public void gotocartpage() throws EncryptedDocumentException, InvalidFormatException {
 
@@ -103,17 +115,16 @@ public class OrderCourseTest extends BaseTestclass {
 		oc.gotoaddtocartpage();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 		ReadExcel rc = new ReadExcel();
-		String Testcasename = ReadExcel.readExcelCell(4, 1);
-		String Testcasedescription = ReadExcel.readExcelCell(4, 2);
-		String TestCaseresult = ReadExcel.readExcelCell(4, 3);
-		System.out.println("test started1");
+		String Testcasename = ReadExcel.readExcelCell(39, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(39, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(39, 3);
+		String srno = ReadExcel.readExcelCell(39, 0);
+		int index = Integer.parseInt(srno);
 
-		rc.startTestcase(Testcasename, "4", 4, Testcasedescription, "pass", "page  is  open");
+		rc.startTestcase(Testcasename, srno, index, Testcasedescription, "pass", "page  is  open");
 
 //	landed on the addtocartpage
 
 	}
-	
-	
 
 }

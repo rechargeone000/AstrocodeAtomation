@@ -68,7 +68,7 @@ public class BaseTestclass {
 		}
 	}
 
-	public void loadConfig() {
+	public void loadConfig(String url) {
 
 		WebDriverManager.chromedriver().setup();
 
@@ -79,7 +79,8 @@ public class BaseTestclass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		driver.manage().deleteAllCookies();
 
-		driver.get(prop.getProperty("lmsurl"));
+		//driver.get(prop.getProperty("url"));
+		 driver.get(url);
 
 	}
 

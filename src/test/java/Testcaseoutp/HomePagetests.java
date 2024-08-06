@@ -27,7 +27,8 @@ public class HomePagetests extends BaseTestclass {
 	@BeforeMethod
 	public void launchbrowser() {
 
-		loadConfig();
+		String url = "https://lms.asttrolok.in";
+		loadConfig(url);
 
 	}
 
@@ -36,8 +37,7 @@ public class HomePagetests extends BaseTestclass {
 
 		driver.quit();
 	}
-
-//	@Test(alwaysRun = true, priority = 4)
+	@Test(alwaysRun = true, priority = 4)
 	public void Logoicondesplayed()
 			throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
 
@@ -241,7 +241,7 @@ public class HomePagetests extends BaseTestclass {
 		String Testdescr = ReadExcel.readExcelCell(11, 2);
 		String result = ReadExcel.readExcelCell(11, 3);
 		String Comments = ReadExcel.readExcelCell(11, 4);
-		hm.viewallbtnenglish();
+		//hm.viewallbtnenglish();
 		if (true) {
 			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 		} else {

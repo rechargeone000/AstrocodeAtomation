@@ -17,10 +17,10 @@ public class OrderCourse extends BaseTestclass {
 
 	public void clickonthecoursehomelibk() throws InterruptedException {
 
-		WebElement df = driver.findElement(cour);
+		WebElement navitem = driver.findElement(cour);
 
 		Actions ac = new Actions(driver);
-		ac.moveToElement(df).build().perform();
+		ac.moveToElement(navitem).build().perform();
 		CommonHelp.Select_Item_list(coursed, "View All");
 		Thread.sleep(4000);
 

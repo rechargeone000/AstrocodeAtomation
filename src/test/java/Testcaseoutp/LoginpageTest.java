@@ -28,28 +28,29 @@ public class LoginpageTest extends BaseTestclass {
 
 	@BeforeMethod
 	public void launchbrowser() {
-		loadConfig();
-	
+		String url = "https://lms.asttrolok.in";
+		loadConfig(url);
+
 	}
 
 	@AfterMethod
 	public void quitbrowser() {
 
-		// driver.quit();
+		 driver.quit();
 
 	}
 
-	// @Test(priority = 1)
+	 @Test(priority = 1)
 	public void loginTestmethod()
 			throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
 		lp = new LoginPage();
 
-		// lp.logincase(prop.getProperty("username"), prop.getProperty("password"));
-		// lp.clickonhomelink();
+		lp.logincase(prop.getProperty("username"), prop.getProperty("password"));
+		lp.clickonhomelink();
 
 		// lp.userlogout();
 		// lp.getstudentnametext();
-		// String email = lp.clickonseting();
+		String email = lp.clickonseting();
 
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 		String srno = ReadExcel.readExcelCell(1, 0);
@@ -59,15 +60,15 @@ public class LoginpageTest extends BaseTestclass {
 		String Comments = ReadExcel.readExcelCell(1, 4);
 		int indexno = Integer.parseInt(srno);
 
-		// ReadExcel rc = new ReadExcel();
+		ReadExcel rc = new ReadExcel();
 
-		// System.out.println(email);
-		// Assert.assertEquals(email, prop.getProperty("username"));
-		// rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
+		System.out.println(email);
+		Assert.assertEquals(email, prop.getProperty("username"));
+		rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 
 	}
 
-	// //@Test(priority = 2)
+	 @Test(priority = 2)
 	public void loginTestmethodinvalid()
 			throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
 		lp = new LoginPage();
@@ -76,11 +77,11 @@ public class LoginpageTest extends BaseTestclass {
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 
 		// lp.userlogout();
-		String srno = ReadExcel.readExcelCell(3, 0);
-		String testcasename = ReadExcel.readExcelCell(3, 1);
-		String Testdescr = ReadExcel.readExcelCell(3, 2);
-		String result = ReadExcel.readExcelCell(3, 3);
-		String Comments = ReadExcel.readExcelCell(3, 4);
+		String srno = ReadExcel.readExcelCell(2, 0);
+		String testcasename = ReadExcel.readExcelCell(2, 1);
+		String Testdescr = ReadExcel.readExcelCell(2, 2);
+		String result = ReadExcel.readExcelCell(2, 3);
+		String Comments = ReadExcel.readExcelCell(2, 4);
 		int indexno = Integer.parseInt(srno);
 
 		ReadExcel rc = new ReadExcel();
@@ -94,13 +95,13 @@ public class LoginpageTest extends BaseTestclass {
 
 		} else {
 
-			rc.startTestcase(testcasename, srno, indexno, Testdescr, result, result);
+			rc.startTestcase(testcasename, srno, indexno, Testdescr, "fail", result);
 
 		}
 
 	}
 
-	// //@Test(priority = 3)
+	@Test(priority = 3)
 	public void loginforAdmintest() throws IOException, EncryptedDocumentException, InvalidFormatException {
 
 		lp = new LoginPage();
@@ -108,6 +109,13 @@ public class LoginpageTest extends BaseTestclass {
 
 		try {
 			lp.logincase(prop.getProperty("aduname"), prop.getProperty("adpass"));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			Thread.sleep(4000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -142,20 +150,20 @@ public class LoginpageTest extends BaseTestclass {
 
 		} else {
 
-			rc.startTestcase(testcasename, srno, 3, Testdescr, result, Comments);
+			rc.startTestcase(testcasename, srno, 3, Testdescr, "fail", Comments);
 
 		}
 
 	}
 
-	//@Test(priority = 4)
+	@Test(priority = 4)
 	public void loginforInstructor() throws IOException, EncryptedDocumentException, InvalidFormatException {
 
 		lp = new LoginPage();
 		Log.info("login loginforInstructor case is  started");
 
 		try {
-			lp.logincase("balmukundsahu2706@gmail.com", "1234567");
+			lp.logincase("balmukundsahu2706@gmail.com", "12345678");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -221,6 +229,6 @@ public class LoginpageTest extends BaseTestclass {
 		String Comments = ReadExcel.readExcelCell(3, 4);
 		ReadExcel rc = new ReadExcel();
 		rc.startTestcase(testcasename, srno, 3, Testdescr, result, Comments);
-		
+
 	}
 }

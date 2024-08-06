@@ -7,11 +7,11 @@
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
-
 			<class name="Testcaseoutp.LoginpageTest" />
 			<class name="Testcaseoutp.HomePagetests" />
 			<class name="Testcaseoutp.UserPaneTest" />
 
+			<class name="Testcaseoutp.InstructorPanelTest" />
 
 		</classes>
 	</test> <!--

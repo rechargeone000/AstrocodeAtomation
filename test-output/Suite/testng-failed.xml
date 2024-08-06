@@ -6,29 +6,30 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Testcaseoutp.HomePagetests">
-        <methods>
-          <include name="quitbrowser"/>
-          <include name="dataconfig"/>
-          <include name="contactuspage"/>
-          <include name="afterlast"/>
-          <include name="launchbrowser"/>
-          <include name="beforessuit"/>
-          <include name="aftsetup"/>
-        </methods>
-      </class> <!-- Testcaseoutp.HomePagetests -->
       <class name="Testcaseoutp.UserPaneTest">
         <methods>
           <include name="dataconfig"/>
           <include name="logoutpageuser"/>
           <include name="quitbrowser"/>
           <include name="afterlast"/>
+          <include name="viewdeatails"/>
           <include name="launchbrowser"/>
           <include name="beforessuit"/>
-          <include name="ForumtabnewPost"/>
           <include name="aftsetup"/>
         </methods>
       </class> <!-- Testcaseoutp.UserPaneTest -->
+      <class name="Testcaseoutp.InstructorPanelTest">
+        <methods>
+          <include name="quitbrowser"/>
+          <include name="dataconfig"/>
+          <include name="checkuser"/>
+          <include name="notificationinst"/>
+          <include name="afterlast"/>
+          <include name="beforessuit"/>
+          <include name="launchbrowser"/>
+          <include name="aftsetup"/>
+        </methods>
+      </class> <!-- Testcaseoutp.InstructorPanelTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

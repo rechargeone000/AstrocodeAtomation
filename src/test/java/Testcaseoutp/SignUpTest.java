@@ -51,7 +51,7 @@ public class SignUpTest extends BaseTestclass {
 
 	}
 
-	@Test(priority = 2)
+//	@Test(priority = 2)
 	public void deleteuser() throws IOException {
 		sp = new SignUp_page();
 

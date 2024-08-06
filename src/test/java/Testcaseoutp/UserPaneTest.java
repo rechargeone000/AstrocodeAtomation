@@ -19,13 +19,15 @@ public class UserPaneTest extends BaseTestclass {
 
 	UserPanel up = new UserPanel();
 	LoginPage lp = new LoginPage();
-	//String ExcelFilePath = "C:\\Users\\dell\\eclipse-workspace\\Asttrokautomation\\src\\test\\resources\\data.xlsx";
+	// String ExcelFilePath =
+	// "C:\\Users\\dell\\eclipse-workspace\\Asttrokautomation\\src\\test\\resources\\data.xlsx";
 	String ExcelFilePath = System.getProperty("user.dir") + "\\src\\test\\resources\\data.xlsx";
+
 	@BeforeMethod
 	public void launchbrowser() {
-		
-			loadConfig();
-		
+
+		String url = "https://lms.asttrolok.in";
+		loadConfig(url);
 
 	}
 
@@ -35,7 +37,7 @@ public class UserPaneTest extends BaseTestclass {
 		driver.quit();
 	}
 
-	 @Test(priority = 15)
+	// @Test(priority = 15)
 	public void checklearningPage() throws InterruptedException, IOException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -64,11 +66,12 @@ public class UserPaneTest extends BaseTestclass {
 		String Testcasedescription = ReadExcel.readExcelCell(15, 2);
 		String TestCaseresult = ReadExcel.readExcelCell(15, 3);
 		System.out.println("test started1");
-		rc.startTestcase(Testcasename, "3", 15, Testcasedescription, "pass", "page  is  open");
+
+		rc.startTestcase(Testcasename, "15", 15, Testcasedescription, "pass", "page  is  open");
 
 	}
 
-	 @Test(priority = 16)
+	// @Test(priority = 16)
 	public void coursespagetest() throws InterruptedException, IOException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -95,12 +98,11 @@ public class UserPaneTest extends BaseTestclass {
 		String Testcasename = ReadExcel.readExcelCell(16, 1);
 		String Testcasedescription = ReadExcel.readExcelCell(16, 2);
 		String TestCaseresult = ReadExcel.readExcelCell(16, 3);
-		System.out.println("test started1");
 		rc.startTestcase(Testcasename, "16", 16, Testcasedescription, "pass", "page  is  open");
 
 	}
 
-	@Test(priority = 17)
+	// @Test(priority = 17)
 	public void purchasesection() throws InterruptedException, IOException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -128,7 +130,7 @@ public class UserPaneTest extends BaseTestclass {
 
 	}
 
-	 @Test(priority = 18)
+	// @Test(priority = 18)
 	public void mycomments() {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -167,7 +169,7 @@ public class UserPaneTest extends BaseTestclass {
 
 	}
 
-	@Test(priority = 19)
+	// @Test(priority = 19)
 	public void favoritesection() throws InterruptedException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -194,7 +196,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "19", 19, Testcasedescription, "pass", "page  is  open");
 	}
 
-	 @Test(priority = 20)
+	// @Test(priority = 20)
 	public void Assignmentpage() {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -224,7 +226,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "20", 20, Testcasedescription, "pass", "page  is  open");
 	}
 
-	@Test(priority = 21)
+	// @Test(priority = 21)
 
 	public void quizzes() {
 		up = new UserPanel();
@@ -261,7 +263,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "21", 21, Testcasedescription, "pass", "page  is  open");
 	}
 
-	@Test(priority = 22)
+	// @Test(priority = 22)
 	public void notparticpated() {
 		up = new UserPanel();
 
@@ -294,7 +296,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "22", 22, Testcasedescription, "pass", "page  is  open");
 	}
 
-	 @Test(priority = 23)
+	// @Test(priority = 23)
 
 	public void Financialsummary()
 			throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
@@ -313,7 +315,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "23", 23, Testcasedescription, "pass", "page  is  open");
 	}
 
-	@Test(priority = 24)
+	// @Test(priority = 24)
 	public void installmentpage() {
 
 		up = new UserPanel();
@@ -360,7 +362,7 @@ public class UserPaneTest extends BaseTestclass {
 
 	}
 
-	 @Test(priority = 25)
+	// @Test(priority = 25)
 
 	public void viewdeatails() {
 
@@ -404,7 +406,7 @@ public class UserPaneTest extends BaseTestclass {
 
 	}
 
-	 @Test(priority = 26)
+	// @Test(priority = 26)
 	public void supporttest() {
 		try {
 			lp.logincase(prop.getProperty("userrrr"), prop.getProperty("passss"));
@@ -422,7 +424,7 @@ public class UserPaneTest extends BaseTestclass {
 
 	}
 
-	@Test(priority = 27)
+	// @Test(priority = 27)
 	public void supporttabew() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -433,7 +435,7 @@ public class UserPaneTest extends BaseTestclass {
 			e.printStackTrace();
 		}
 		up.suporttabuser();
-		up.newtab();
+		up.sunewtab();
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 
 		String Testcasename = ReadExcel.readExcelCell(26, 1);
@@ -445,7 +447,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "27", 27, Testcasedescription, TestCaseresult, Comments);
 	}
 
-	@Test(priority = 28)
+	// @Test(priority = 28)
 	public void Incustomersupport() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -466,7 +468,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "28", 28, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 29)
+	// @Test(priority = 29)
 	public void ticketcustom() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -487,7 +489,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "29", 29, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 30)
+	// @Test(priority = 30)
 	public void ticketcusto() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -508,7 +510,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "30", 30, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 31)
+	// @Test(priority = 31)
 	public void Forumtab() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -529,7 +531,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "31", 31, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 32)
+	// @Test(priority = 32)
 	public void Forumtabnewtopics() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -550,7 +552,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "32", 32, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 33)
+	// @Test(priority = 33)
 	public void Forumtabnewtopics1() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -571,7 +573,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "33", 33, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 34)
+	// @Test(priority = 34)
 	public void ForumtabnewPost() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -592,7 +594,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "34", 34, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 35)
+	// @Test(priority = 35)
 	public void bookmarkspage() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -613,9 +615,10 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "35", 35, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 36)
+	// @Test(priority = 36)
 	public void logoutpageuser() {
-
+		up = new UserPanel();
+		lp = new LoginPage();
 		up.logoutpageuser();
 		try {
 			ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
@@ -632,6 +635,28 @@ public class UserPaneTest extends BaseTestclass {
 		String TestCaseresult = ReadExcel.readExcelCell(36, 3);
 		ReadExcel rc = new ReadExcel();
 		rc.startTestcase(Testcasename, "36", 36, Testcasedescription, TestCaseresult, "page  is  open");
+
+	}
+
+	@Test(priority = 104)
+	public void createtickettest() throws InterruptedException {
+
+		try {
+			lp.logincase(prop.getProperty("userrrr"), prop.getProperty("passss"));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		up.suporttabuser();
+		Thread.sleep(3000);
+		up.sunewtab();
+
+		up.Createticket();
+		String Testcasename = ReadExcel.readExcelCell(104, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(104, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(104, 3);
+		ReadExcel rc = new ReadExcel();
+		rc.startTestcase(Testcasename, "104", 104, Testcasedescription, TestCaseresult, "page  is  open");
 
 	}
 
