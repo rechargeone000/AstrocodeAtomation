@@ -31,7 +31,7 @@ public class OrderCourseTest extends BaseTestclass {
 		driver.quit();
 	}
 
-	@Test(priority = 37)
+	// @Test(priority = 37)
 	public void courseselect() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 //courcess from course dropdown
 		OrderCourse oc = new OrderCourse();
@@ -67,7 +67,7 @@ public class OrderCourseTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, srno, index, Testcasedescription, "pass", "page  is  open");
 	}
 
-	@Test(priority = 38)
+	// @Test(priority = 38)
 	public void addTocartbutton() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 
 		// item added to the cart
@@ -98,7 +98,7 @@ public class OrderCourseTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, srno, index, Testcasedescription, "pass", "page  is  open");
 	}
 
-	@Test(priority = 39)
+	// @Test(priority = 39)
 
 	public void gotocartpage() throws EncryptedDocumentException, InvalidFormatException {
 
@@ -125,6 +125,45 @@ public class OrderCourseTest extends BaseTestclass {
 
 //	landed on the addtocartpage
 
+	}
+
+	@Test
+	public void Completeorderdetails() throws InterruptedException {
+
+		OrderCourse oc = new OrderCourse();
+
+		LoginPage lp = new LoginPage();
+		try {
+			lp.logincase(prop.getProperty("username"), prop.getProperty("password"));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			oc.clickonthecoursehomelibk();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		String coursenamee = "Astrology Intermediate Level";
+
+		driver.findElement(By.xpath("//h3[normalize-space()='" + coursenamee + "']")).click();
+
+		// h3[normalize-space()='Astrology Intermediate Level']
+
+		oc.bookfromcentralbookbtn();
+
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		oc.addtocartbutton();
+
+		Thread.sleep(4000);
 	}
 
 }

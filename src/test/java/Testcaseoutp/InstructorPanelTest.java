@@ -23,7 +23,7 @@ public class InstructorPanelTest extends BaseTestclass {
 
 	@BeforeMethod
 	public void launchbrowser() {
-		
+
 		String usrl = "https://lms.asttrolok.in/";
 		loadConfig(usrl);
 

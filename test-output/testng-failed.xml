@@ -8,7 +8,7 @@
           <include name="dataconfig"/>
           <include name="afterlast"/>
           <include name="launchbrowser"/>
-          <include name="CreateCoursetest"/>
+          <include name="discounnt"/>
           <include name="beforessuit"/>
           <include name="quitbrowser"/>
           <include name="aftsetup"/>
