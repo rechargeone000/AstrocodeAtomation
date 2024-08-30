@@ -1,7 +1,11 @@
 package Testcaseoutp;
 
+import org.openqa.selenium.By;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import PageObject.HomePaget;
@@ -16,22 +20,11 @@ public class videochecktest extends BaseTestclass {
 
 	String ExcelFilePath = System.getProperty("user.dir") + "\\src\\test\\resources\\data.xlsx";
 
-	@BeforeMethod
+	@BeforeClass
 	public void launchbrowser() {
 
-		String url = "https://lms.asttrolok.in";
+		String url = "https://www.asttrolok.com/";
 		loadConfig(url);
-
-	}
-
-	@AfterMethod
-	public void quitbrowser() {
-
-		driver.quit();
-	}
-
-	@Test
-	public void checkdatauseraccess() throws InterruptedException {
 		lp = new LoginPage();
 
 		try {
@@ -40,11 +33,42 @@ public class videochecktest extends BaseTestclass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
 
-		vp.checkuseronadmin("balmukund.sahu@rechargestudio.com");
+	@AfterClass
+	public void quitbrowser() {
+
+		driver.quit();
+	}
+
+	@Test (dataProvider= "data-provider")
+	public void checkdatauseraccess(String email) throws InterruptedException {
+	
+
+		
+		vp.checkuseronadmin(email);
 		vp.switchwindow();
-		vp.openlearningpage();
+		vp.openlearningpage("Astrology Basic Level ");
+		//vp.switchwindow();
+		Thread.sleep(4000);
+		String text = driver
+				.findElement(By.xpath("(//span[@class=\"font-weight-bold font-14 text-dark-blue d-block\"])[1]"))
+				.getText();
+
+		System.out.println("cousercontent " + text);
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("(//span[@class=\"chapter-icon bg-gray300 mr-10\"])[3]")).click();
+		
+		
+		driver.close();
+		//vp.switchwindow();
 
 	}
 
+	
+	
+	 @DataProvider (name = "data-provider")
+     public Object[][] dpMethod(){
+	 return new Object[][] {{"balmukund.sahu@rechargestudio.com"} };
+     }
 }

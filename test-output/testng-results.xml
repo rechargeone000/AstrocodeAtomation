@@ -1,37 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-29T17:21:42 IST" name="Default suite" finished-at="2024-08-29T17:22:35 IST" duration-ms="52977">
+  <suite started-at="2024-08-30T19:02:09 IST" name="Default suite" finished-at="2024-08-30T19:03:50 IST" duration-ms="100150">
     <groups>
     </groups>
-    <test started-at="2024-08-29T17:21:42 IST" name="Default test" finished-at="2024-08-29T17:22:35 IST" duration-ms="52977">
+    <test started-at="2024-08-30T19:02:09 IST" name="Default test" finished-at="2024-08-30T19:03:50 IST" duration-ms="100150">
       <class name="Testcaseoutp.videochecktest">
-        <test-method is-config="true" signature="beforessuit()[pri:0, instance:Testcaseoutp.videochecktest@6025e1b6]" started-at="2024-08-29T17:21:42 IST" name="beforessuit" finished-at="2024-08-29T17:21:42 IST" duration-ms="464" status="PASS">
+        <test-method is-config="true" signature="beforessuit()[pri:0, instance:Testcaseoutp.videochecktest@5aa9e4eb]" started-at="2024-08-30T19:02:09 IST" name="beforessuit" finished-at="2024-08-30T19:02:09 IST" duration-ms="453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforessuit -->
-        <test-method is-config="true" signature="dataconfig()[pri:0, instance:Testcaseoutp.videochecktest@6025e1b6]" started-at="2024-08-29T17:21:42 IST" name="dataconfig" finished-at="2024-08-29T17:21:42 IST" duration-ms="68" status="PASS">
+        <test-method is-config="true" signature="dataconfig()[pri:0, instance:Testcaseoutp.videochecktest@5aa9e4eb]" started-at="2024-08-30T19:02:09 IST" name="dataconfig" finished-at="2024-08-30T19:02:09 IST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataconfig -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.videochecktest@6025e1b6]" started-at="2024-08-29T17:21:42 IST" name="launchbrowser" finished-at="2024-08-29T17:21:50 IST" duration-ms="7847" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.videochecktest@5aa9e4eb]" started-at="2024-08-30T19:02:09 IST" name="launchbrowser" finished-at="2024-08-30T19:02:49 IST" duration-ms="39235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="checkdatauseraccess()[pri:0, instance:Testcaseoutp.videochecktest@6025e1b6]" started-at="2024-08-29T17:21:50 IST" name="checkdatauseraccess" finished-at="2024-08-29T17:22:35 IST" duration-ms="44612" status="PASS">
+        <test-method signature="checkdatauseraccess(java.lang.String)[pri:0, instance:Testcaseoutp.videochecktest@5aa9e4eb]" started-at="2024-08-30T19:02:49 IST" name="checkdatauseraccess" data-provider="data-provider" finished-at="2024-08-30T19:03:49 IST" duration-ms="60189" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[balmukund.sahu@rechargestudio.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with locator By.xpath: (//span[@class="font-weight-bold font-14 text-dark-blue d-block"])[1]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//span[@class="font-weight-bold font-14 text-dark-blue d-block"])[1]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at Testcaseoutp.videochecktest.checkdatauseraccess(videochecktest.java:55)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkdatauseraccess -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.videochecktest@6025e1b6]" started-at="2024-08-29T17:22:35 IST" name="quitbrowser" finished-at="2024-08-29T17:22:35 IST" duration-ms="396" status="PASS">
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.videochecktest@5aa9e4eb]" started-at="2024-08-30T19:03:49 IST" name="quitbrowser" finished-at="2024-08-30T19:03:50 IST" duration-ms="530" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="aftsetup()[pri:0, instance:Testcaseoutp.videochecktest@6025e1b6]" started-at="2024-08-29T17:22:35 IST" name="aftsetup" finished-at="2024-08-29T17:22:35 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="aftsetup()[pri:0, instance:Testcaseoutp.videochecktest@5aa9e4eb]" started-at="2024-08-30T19:03:50 IST" name="aftsetup" finished-at="2024-08-30T19:03:50 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftsetup -->
-        <test-method is-config="true" signature="afterlast()[pri:0, instance:Testcaseoutp.videochecktest@6025e1b6]" started-at="2024-08-29T17:22:35 IST" name="afterlast" finished-at="2024-08-29T17:22:37 IST" duration-ms="1515" status="PASS">
+        <test-method is-config="true" signature="afterlast()[pri:0, instance:Testcaseoutp.videochecktest@5aa9e4eb]" started-at="2024-08-30T19:03:50 IST" name="afterlast" finished-at="2024-08-30T19:03:51 IST" duration-ms="1721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterlast -->
