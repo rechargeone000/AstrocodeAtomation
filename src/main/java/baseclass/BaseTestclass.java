@@ -76,7 +76,7 @@ public class BaseTestclass {
 
 		driver.manage().window().maximize();
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.manage().deleteAllCookies();
 
 		//driver.get(prop.getProperty("url"));
