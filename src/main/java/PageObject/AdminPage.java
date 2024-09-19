@@ -309,5 +309,15 @@ public class AdminPage extends BaseTestclass {
 		
 		
 	}
+	
+	
+	
+	public void supportadmin() {
+		
+		
+		driver.findElement(CourseType);
+		
+		
+	}
 
 }

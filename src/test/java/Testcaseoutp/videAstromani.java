@@ -182,8 +182,8 @@ public class videAstromani extends BaseTestclass {
 				.xpath("(//span[@class='font-weight-bold font-14 text-dark-blue d-block'])[" + sectionclickvalue + "]"))
 				.click();
 
-		driver.findElement(By.xpath("(//span[@class='chapter-icon bg-gray300 mr-10'])[34]")).click();
-		Thread.sleep(15000);
+		driver.findElement(By.xpath("(//span[@class='chapter-icon bg-gray300 mr-10'])[36]")).click();
+		Thread.sleep(7000);
 
 		try {
 //			WebElement frm = driver.findElement(By.xpath("//iframe[@loading='lazy']"));
@@ -201,8 +201,8 @@ public class videAstromani extends BaseTestclass {
 			String Testcasedescription = paynowbtn;
 			String TestCaseresult = accessdenied;
 			
-			int indexxx = index+1;
-			rc.startTestcase(Testcasename, srno, indexxx, Testcasedescription, "pass", "page  is  open");
+			 index = index+1;
+			rc.startTestcase(Testcasename, srno,index , Testcasedescription, "pass", "page  is  open");
 
 		} catch (Exception e) {
 			System.out.println("video is playing");

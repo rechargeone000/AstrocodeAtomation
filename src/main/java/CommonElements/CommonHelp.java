@@ -272,15 +272,15 @@ public class CommonHelp extends BaseTestclass {
 //		}
 
 	// Function to Check if Java Script Page has Loaded Complete
-	public void waitforJSPageToLoad() {
-		fwait.until(new Function<WebDriver, Boolean>() {
-			// Boolean isPageLoaded= Boolean.FALSE;
-			public Boolean apply(WebDriver driver) {
-				return ((JavascriptExecutor) driver).executeScript("return.document.readyState").equals("complete");
-			}
-		});
+//	public void waitforJSPageToLoad() {
+//		//fwait.until(new Function<WebDriver, Boolean>() {
+//			// Boolean isPageLoaded= Boolean.FALSE;
+//			public Boolean apply(WebDriver driver) {
+//				return ((JavascriptExecutor) driver).executeScript("return.document.readyState").equals("complete");
+//			}
+//		});
 
-	}
+	//}
 
 	public static void getElementFromListAndClick(By UL_locator, String ElementTagName, String TextAsData) {
 		// CommonHelper.enterValues(TB_locator, values);

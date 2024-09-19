@@ -106,39 +106,15 @@ public class AdminTest extends BaseTestclass {
 			e.printStackTrace();//
 		}
 		ap.Discount();
-		Thread.sleep(2000 );
+		Thread.sleep(2000);
 		ReadExcel rc = new ReadExcel();
 
 		// rc.startTestcase(testcasename, srno, indexno, Testdescr, result, Comments);
 	}
-	
-	
-   @Test
-	public void  UsersTest() {
-		
-		
-		
-		
-		)
+
+	@Test
+	public void UsersTest() {
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

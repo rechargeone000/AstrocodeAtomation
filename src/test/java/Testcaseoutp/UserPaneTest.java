@@ -5,14 +5,19 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.By;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import CommonElements.CommonHelp;
+import PageObject.AdminPage;
 import PageObject.LoginPage;
 import PageObject.UserPanel;
 import baseclass.BaseTestclass;
 import jdk.internal.org.jline.utils.Log;
+import manageUtils.ConvertEx;
 import manageUtils.ReadExcel;
 
 public class UserPaneTest extends BaseTestclass {
@@ -22,6 +27,12 @@ public class UserPaneTest extends BaseTestclass {
 	// String ExcelFilePath =
 	// "C:\\Users\\dell\\eclipse-workspace\\Asttrokautomation\\src\\test\\resources\\data.xlsx";
 	String ExcelFilePath = System.getProperty("user.dir") + "\\src\\test\\resources\\data.xlsx";
+
+	@BeforeClass
+	public void beforeclass() {
+
+		System.out.println("started");
+	}
 
 	@BeforeMethod
 	public void launchbrowser() {
@@ -33,8 +44,18 @@ public class UserPaneTest extends BaseTestclass {
 
 	@AfterMethod
 	public void quitbrowser() {
-
 		driver.quit();
+
+		System.out.println("aftermethod");
+
+	}
+
+	@AfterClass
+	public void testgenepdf() {
+		driver.quit();
+		ConvertEx cv = new ConvertEx();
+		cv.Genratepdf();
+
 	}
 
 	// @Test(priority = 15)
@@ -424,7 +445,7 @@ public class UserPaneTest extends BaseTestclass {
 
 	}
 
-	// @Test(priority = 27)
+//	@Test(priority = 27)
 	public void supporttabew() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -447,7 +468,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "27", 27, Testcasedescription, TestCaseresult, Comments);
 	}
 
-	// @Test(priority = 28)
+//	@Test(priority = 28)
 	public void Incustomersupport() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -468,7 +489,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "28", 28, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	// @Test(priority = 29)
+	@Test(priority = 29)
 	public void ticketcustom() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -489,7 +510,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "29", 29, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	// @Test(priority = 30)
+//	@Test(priority = 30)
 	public void ticketcusto() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -512,6 +533,7 @@ public class UserPaneTest extends BaseTestclass {
 
 	// @Test(priority = 31)
 	public void Forumtab() throws EncryptedDocumentException, InvalidFormatException {
+		// need to give anothere number to this method
 		up = new UserPanel();
 		lp = new LoginPage();
 		try {
@@ -652,6 +674,7 @@ public class UserPaneTest extends BaseTestclass {
 		up.sunewtab();
 
 		up.Createticket();
+		up.clickonsendmessagbtn();
 		String Testcasename = ReadExcel.readExcelCell(104, 1);
 		String Testcasedescription = ReadExcel.readExcelCell(104, 2);
 		String TestCaseresult = ReadExcel.readExcelCell(104, 3);
@@ -660,4 +683,45 @@ public class UserPaneTest extends BaseTestclass {
 
 	}
 
+	@Test(priority = 105)
+	public void checkticketinadmin() throws EncryptedDocumentException, InvalidFormatException, InterruptedException {
+
+		up = new UserPanel();
+		lp = new LoginPage();
+		AdminPage ap = new AdminPage();
+		try {
+			lp.logincase(prop.getProperty("aduname"), prop.getProperty("adpass"));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		By coursesupport = By.xpath("//span[normalize-space()='Courses Support']");
+
+		CommonHelp.scrollToElementView(coursesupport);
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[normalize-space()='Courses Support']")).click();
+
+		String name = driver.findElement(By.xpath("//table[@class='table table-striped font-14']//tr[2]//td[1]"))
+				.getText();
+		String fulrow = driver.findElement(By.xpath("//table[@class='table table-striped font-14']//tr[2]")).getText();
+
+		System.out.println(name + "new ticket has been created" + fulrow);
+
+		// By replybutton = By.xpath("//tbody/tr[2]/td[8]/a[1]/i[1]");
+
+		driver.findElement(By.xpath("//tbody/tr[2]/td[8]/a[1]/i[1]")).click();
+		driver.findElement(By.xpath("//textarea[@name='message']")).sendKeys(name + "..this is you ticket");
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+
+		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
+
+		String Testcasename = ReadExcel.readExcelCell(31, 1);
+		String Testcasedescription = ReadExcel.readExcelCell(31, 2);
+		String TestCaseresult = ReadExcel.readExcelCell(31, 3);
+		ReadExcel rc = new ReadExcel();
+		rc.startTestcase("verify if tiket has been created", "31", 31, "ticket has  been found", "pass",
+				"ticket has been found");
+
+	}
 }

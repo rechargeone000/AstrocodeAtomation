@@ -3,6 +3,7 @@ package PageObject;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
@@ -83,7 +84,8 @@ public class OrderCourse extends BaseTestclass {
 
 	public void bookfromcentralbookbtn() {
 
-		By bookbtn = By.xpath("//div[contains(@class,'course-img text-center')]//form");
+		By bookbtn = By.xpath("//div[contains(@class,'course-img text-center')]//form//button");
+ JavascriptExecutor js =  (JavascriptExecutor)driver;
 
 		driver.findElement(bookbtn).click();
 

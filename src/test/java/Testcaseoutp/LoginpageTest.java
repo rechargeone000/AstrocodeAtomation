@@ -28,7 +28,7 @@ public class LoginpageTest extends BaseTestclass {
 
 	@BeforeMethod
 	public void launchbrowser() {
-		String url = "https://lms.asttrolok.in";
+		String url = "https://www.asttrolok.com";
 		loadConfig(url);
 
 	}
@@ -101,7 +101,7 @@ public class LoginpageTest extends BaseTestclass {
 
 	}
 
-	@Test(priority = 3)
+	//@Test(priority = 3)
 	public void loginforAdmintest() throws IOException, EncryptedDocumentException, InvalidFormatException {
 
 		lp = new LoginPage();

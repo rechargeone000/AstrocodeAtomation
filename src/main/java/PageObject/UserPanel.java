@@ -250,7 +250,7 @@ public class UserPanel extends BaseTestclass {
 
 		By supporttype = By.xpath("//select[@id='supportType']");
 
-		driver.findElement(SubJect).sendKeys("CreateTicket" + Math.random());
+		driver.findElement(SubJect).sendKeys("CreateTicket" + Math.random()+100);
 		CommonHelp.SelectDropdown(supporttype, "Course support");
 
 		driver.findElement(coursedrop).click();
@@ -259,6 +259,24 @@ public class UserPanel extends BaseTestclass {
 		CommonHelp.Select_Item_list(drop, "Free Astrology Course (Hindi) - Mr.Alok Khandelwal");
 		driver.findElement(By.xpath("//textarea[@name='message']")).sendKeys("create newticoket");
 	}
+	public void Createticketplate2() {
+
+		By SubJect = By.xpath("//input[@name='title']");
+		By coursedrop = By.xpath("(//span[@class='select2-selection__rendered'])[2]");
+		By messagebox = By.xpath("//textarea[@name='message']");
+
+		By supporttype = By.xpath("//select[@id='supportType']");
+
+		driver.findElement(SubJect).sendKeys("CreateTicket" + Math.random()+100);
+		CommonHelp.SelectDropdown(supporttype, "Platform support");
+
+		driver.findElement(By.xpath("(//span[@class=\"selection\"])[1]")).click();
+		By drop = By.xpath("//span[@class=\"select2-selection select2-selection--single\"]");
+
+		CommonHelp.Select_Item_list(drop, "Free Astrology Course (Hindi) - Mr.Alok Khandelwal");
+		driver.findElement(By.xpath("//textarea[@name='message']")).sendKeys("create newticoket");
+	}
+
 
 	public void Createticketwithattachment() {
 

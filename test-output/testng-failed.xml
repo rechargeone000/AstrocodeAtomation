@@ -3,17 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcaseoutp.doubleEntryAccess">
+      <class name="Testcaseoutp.UserPaneTest">
         <methods>
           <include name="dataconfig"/>
-          <include name="launchbrowser"/>
-          <include name="checkdatauseraccess" invocation-numbers="25"/>
-          <include name="afterlast"/>
-          <include name="beforessuit"/>
+          <include name="testgenepdf"/>
           <include name="quitbrowser"/>
+          <include name="afterlast"/>
+          <include name="checkticketinadmin"/>
+          <include name="launchbrowser"/>
+          <include name="beforessuit"/>
+          <include name="beforeclass"/>
           <include name="aftsetup"/>
         </methods>
-      </class> <!-- Testcaseoutp.doubleEntryAccess -->
+      </class> <!-- Testcaseoutp.UserPaneTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

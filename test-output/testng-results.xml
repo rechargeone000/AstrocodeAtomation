@@ -1,48 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-04T11:50:29 IST" name="Default suite" finished-at="2024-09-04T11:51:22 IST" duration-ms="52613">
+  <suite started-at="2024-09-18T16:26:35 IST" name="Default suite" finished-at="2024-09-18T16:27:58 IST" duration-ms="82884">
     <groups>
     </groups>
-    <test started-at="2024-09-04T11:50:29 IST" name="Default test" finished-at="2024-09-04T11:51:22 IST" duration-ms="52613">
-      <class name="Testcaseoutp.doubleEntryAccess">
-        <test-method is-config="true" signature="beforessuit()[pri:0, instance:Testcaseoutp.doubleEntryAccess@682b2fa]" started-at="2024-09-04T11:50:28 IST" name="beforessuit" finished-at="2024-09-04T11:50:29 IST" duration-ms="608" status="PASS">
+    <test started-at="2024-09-18T16:26:35 IST" name="Default test" finished-at="2024-09-18T16:27:58 IST" duration-ms="82884">
+      <class name="Testcaseoutp.UserPaneTest">
+        <test-method is-config="true" signature="beforessuit()[pri:0, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:26:34 IST" name="beforessuit" finished-at="2024-09-18T16:26:35 IST" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforessuit -->
-        <test-method is-config="true" signature="dataconfig()[pri:0, instance:Testcaseoutp.doubleEntryAccess@682b2fa]" started-at="2024-09-04T11:50:29 IST" name="dataconfig" finished-at="2024-09-04T11:50:29 IST" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="dataconfig()[pri:0, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:26:35 IST" name="dataconfig" finished-at="2024-09-18T16:26:35 IST" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataconfig -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.doubleEntryAccess@682b2fa]" started-at="2024-09-04T11:50:29 IST" name="launchbrowser" finished-at="2024-09-04T11:51:03 IST" duration-ms="33608" status="PASS">
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:26:35 IST" name="beforeclass" finished-at="2024-09-18T16:26:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:26:35 IST" name="launchbrowser" finished-at="2024-09-18T16:26:40 IST" duration-ms="5536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="checkdatauseraccess(java.lang.String)[pri:0, instance:Testcaseoutp.doubleEntryAccess@682b2fa]" started-at="2024-09-04T11:51:04 IST" name="checkdatauseraccess" data-provider="data-provider" finished-at="2024-09-04T11:51:20 IST" duration-ms="16135" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[prernaksharma17@gmail.com]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="ticketcustom()[pri:29, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:26:40 IST" name="ticketcustom" finished-at="2024-09-18T16:26:52 IST" duration-ms="11551" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkdatauseraccess -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.doubleEntryAccess@682b2fa]" started-at="2024-09-04T11:51:20 IST" name="quitbrowser" finished-at="2024-09-04T11:51:22 IST" duration-ms="1029" status="PASS">
+        </test-method> <!-- ticketcustom -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:26:52 IST" name="quitbrowser" finished-at="2024-09-18T16:26:53 IST" duration-ms="674" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitbrowser -->
-        <test-method is-config="true" signature="aftsetup()[pri:0, instance:Testcaseoutp.doubleEntryAccess@682b2fa]" started-at="2024-09-04T11:51:22 IST" name="aftsetup" finished-at="2024-09-04T11:51:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:26:53 IST" name="launchbrowser" finished-at="2024-09-18T16:26:57 IST" duration-ms="4794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="createtickettest()[pri:104, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:26:57 IST" name="createtickettest" finished-at="2024-09-18T16:27:16 IST" duration-ms="18638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createtickettest -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:27:16 IST" name="quitbrowser" finished-at="2024-09-18T16:27:16 IST" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:27:16 IST" name="launchbrowser" finished-at="2024-09-18T16:27:18 IST" duration-ms="1874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="checkticketinadmin()[pri:105, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:27:18 IST" name="checkticketinadmin" finished-at="2024-09-18T16:27:57 IST" duration-ms="38553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkticketinadmin -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:27:57 IST" name="quitbrowser" finished-at="2024-09-18T16:27:57 IST" duration-ms="356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+        <test-method is-config="true" signature="testgenepdf()[pri:0, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:27:57 IST" name="testgenepdf" finished-at="2024-09-18T16:27:58 IST" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgenepdf -->
+        <test-method is-config="true" signature="aftsetup()[pri:0, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:27:58 IST" name="aftsetup" finished-at="2024-09-18T16:27:58 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftsetup -->
-        <test-method is-config="true" signature="afterlast()[pri:0, instance:Testcaseoutp.doubleEntryAccess@682b2fa]" started-at="2024-09-04T11:51:22 IST" name="afterlast" finished-at="2024-09-04T11:51:22 IST" duration-ms="838" status="PASS">
+        <test-method is-config="true" signature="afterlast()[pri:0, instance:Testcaseoutp.UserPaneTest@2925bf5b]" started-at="2024-09-18T16:27:58 IST" name="afterlast" finished-at="2024-09-18T16:27:58 IST" duration-ms="585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterlast -->
-      </class> <!-- Testcaseoutp.doubleEntryAccess -->
+      </class> <!-- Testcaseoutp.UserPaneTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

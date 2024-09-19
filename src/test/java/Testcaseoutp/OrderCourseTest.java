@@ -7,6 +7,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import CommonElements.CommonHelp;
 import PageObject.LoginPage;
 import PageObject.OrderCourse;
 import baseclass.BaseTestclass;
@@ -20,7 +21,7 @@ public class OrderCourseTest extends BaseTestclass {
 	@BeforeMethod
 	public void launchbrowser() {
 
-		String url = "https://lms.asttrolok.in";
+		String url = "https://www.asttrolok.com";
 		loadConfig(url);
 
 	}
@@ -31,7 +32,7 @@ public class OrderCourseTest extends BaseTestclass {
 		driver.quit();
 	}
 
-	// @Test(priority = 37)
+	@Test
 	public void courseselect() throws InterruptedException, EncryptedDocumentException, InvalidFormatException {
 //courcess from course dropdown
 		OrderCourse oc = new OrderCourse();
@@ -43,17 +44,42 @@ public class OrderCourseTest extends BaseTestclass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		oc.clickonthecoursehomelibk();
+		// oc.clickonthecoursehomelibk();
+		driver.findElement(By.xpath("//a[normalize-space()='Home']")).click();
 
-		String coursenamee = "Astrology Intermediate Level";
+		By onlinecourse = By.xpath("//div[contains(@class,'mt-lg-0 mt-lg-0 cats mobile1')]//a[2]");
+		CommonHelp.clickOnElement(onlinecourse);
 
-		driver.findElement(By.xpath("//h3[normalize-space()='" + coursenamee + "']")).click();
+		Thread.sleep(2000);
+
+		By couname = By.xpath("(//div[@class='image-box'])[2]");
+		try {
+			CommonHelp.clickOnElement(couname);
+			System.out.println("trysec");
+		} catch (Exception e) {
+			CommonHelp.clickOnElement_JS(couname);
+
+		}
+
+		Thread.sleep(5000);
+
+//		By coursett = By
+//				.xpath("(//h3[@class=\"mt-5 webinar-title webinartitle font-weight-bold font-16 text-dark-blue\"])[1]");
+
+		// driver.findElement(By.xpath("//h3[normalize-space()='" + coursenamee +
+		// "']")).click();
+		// String coursenamee = "Astrology Intermediate Level";
 
 		// h3[normalize-space()='Astrology Intermediate Level']
 
-		oc.bookfromcentralbookbtn();
+	
+		//oc.bookfromcentralbookbtn();
+		
+		By booknowbluw =By.xpath("(//button[contains(text(),'Buy now!')])[2]");
+		
+		CommonHelp.clickOnElement_JS(booknowbluw);
+		Thread.sleep(5000);
 
-		// oc.startpaybutton();
 		System.out.println("done");
 		ReadExcel.setUpExcel(ExcelFilePath, "Testcases");
 		ReadExcel rc = new ReadExcel();
@@ -127,7 +153,7 @@ public class OrderCourseTest extends BaseTestclass {
 
 	}
 
-	@Test
+	// @Test
 	public void Completeorderdetails() throws InterruptedException {
 
 		OrderCourse oc = new OrderCourse();
@@ -147,8 +173,9 @@ public class OrderCourseTest extends BaseTestclass {
 		}
 
 		String coursenamee = "Astrology Intermediate Level";
-
-		driver.findElement(By.xpath("//h3[normalize-space()='" + coursenamee + "']")).click();
+		// h3[normalize-space()='Astrology Intermediate Level']
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//h3[normalize-space()='Astrology Intermediate Level']")).click();
 
 		// h3[normalize-space()='Astrology Intermediate Level']
 
