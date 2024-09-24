@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentTest;
 
 import PageObject.IndexPage;
+import PageObject.LoginPage;
 import PageObject.SignUp_page;
 import baseclass.BaseTestclass;
 import manageUtils.ReadExcel;
@@ -20,6 +21,7 @@ public class SignUpTest extends BaseTestclass {
 
 	SignUp_page sp;
 	// IndexPage ip;
+	LoginPage lp = new LoginPage();
 	String ExcelFilePath = "C:\\Users\\dell\\eclipse-workspace\\Asttrokautomation\\src\\test\\resources\\data.xlsx";
 
 	@Test(priority = 1)
@@ -56,8 +58,9 @@ public class SignUpTest extends BaseTestclass {
 		sp = new SignUp_page();
 
 		try {
-			sp.deletetheuser();
-		} catch (InterruptedException e) {
+			System.out.println("name");
+			//sp.deletetheuser();
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

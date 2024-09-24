@@ -106,6 +106,10 @@ public class videoaccesscheckpage extends BaseTestclass {
 				break;
 
 				// System.out.println(name);
+			}else {
+				
+			System.out.println("course not found");
+				
 			}
 
 			Thread.sleep(2000);
@@ -189,24 +193,24 @@ public class videoaccesscheckpage extends BaseTestclass {
 			driver.switchTo().window(windows.get(1));
 
 			// Determine the window to close (e.g., based on index)
-			System.out.println("arraylist"+windows);
+			System.out.println("arraylist" + windows);
 
 			for (String handle : driver.getWindowHandles()) {
-				if(!handle.equals(main)) {
-					
+				if (!handle.equals(main)) {
+
 					driver.switchTo().window(handle);
-					
+
 					String originalHandle1 = driver.getWindowHandle();
 
-				if (!handle.equals(originalHandle1)) {
-					driver.switchTo().window(handle);
-					driver.close();
-				}
-				
+					if (!handle.equals(originalHandle1)) {
+						driver.switchTo().window(handle);
+						driver.close();
+					}
+
 				}
 			}
 
-		//	driver.switchTo().window(originalHandle);
+			// driver.switchTo().window(originalHandle);
 		}
 
 	}

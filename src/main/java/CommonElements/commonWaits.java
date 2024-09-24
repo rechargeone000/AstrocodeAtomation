@@ -3,7 +3,7 @@ package CommonElements;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
-
+import 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
@@ -81,41 +81,41 @@ public static WebDriverWait driverwait ;
 //		}
 	
 	//Function to Wait Untill page to load
-	public Boolean waitPageToLoad(WebDriver driver){
-		
-		return String
-                .valueOf(((JavascriptExecutor) driver).executeScript("return document.readyState"))
-                .equals("complete");
-		
-		}
-	
-	//IMPORTANT Function to Wait for page to load
-	public static void waitForPageToLoad(){
-	
-		 Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(4000));
-		    wait.until(new Function<WebDriver, Boolean>() {
-		        public Boolean apply(WebDriver driver) {
-		            System.out.println("Current Window State       : "
-		                + String.valueOf(((JavascriptExecutor) driver).executeScript("return document.readyState")));
-		            return String
-		                .valueOf(((JavascriptExecutor) driver).executeScript("return document.readyState"))
-		                .equals("complete");
-		        }
-		    });
-		}
-	
-	
-	//Function to wait for the page to load
-	public static void waitForPageLoad(WebDriver driver) {
-        ExpectedCondition<Boolean> pageLoadCondition = new
-                ExpectedCondition<Boolean>() {
-                    public Boolean apply(WebDriver driver) {
-                        return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
-                    }
-                };
-        		WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(2000));
-        wait.until(pageLoadCondition);
-    }
+//	public Boolean waitPageToLoad(WebDriver driver){
+//		
+//		return String
+//                .valueOf(((JavascriptExecutor) driver).executeScript("return document.readyState"))
+//                .equals("complete");
+//		
+//		}
+//	
+//	//IMPORTANT Function to Wait for page to load
+//	public static void waitForPageToLoad(){
+//	
+//		 Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(4000));
+//		    wait.until(new Function<WebDriver, Boolean>() {
+//		        public Boolean apply(WebDriver driver) {
+//		            System.out.println("Current Window State       : "
+//		                + String.valueOf(((JavascriptExecutor) driver).executeScript("return document.readyState")));
+//		            return String
+//		                .valueOf(((JavascriptExecutor) driver).executeScript("return document.readyState"))
+//		                .equals("complete");
+//		        }
+//		    });
+//		}
+//	
+//	
+//	//Function to wait for the page to load
+//	public static void waitForPageLoad(WebDriver driver) {
+//        ExpectedCondition<Boolean> pageLoadCondition = new
+//                ExpectedCondition<Boolean>() {
+//                    public Boolean apply(WebDriver driver) {
+//                        return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
+//                    }
+//                };
+//        		WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(2000));
+//        wait.until(pageLoadCondition);
+//    }
 }
 	
 

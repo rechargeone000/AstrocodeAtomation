@@ -44,7 +44,7 @@ public class UserPaneTest extends BaseTestclass {
 
 	@AfterMethod
 	public void quitbrowser() {
-		driver.quit();
+	//	driver.quit();
 
 		System.out.println("aftermethod");
 
@@ -52,7 +52,7 @@ public class UserPaneTest extends BaseTestclass {
 
 	@AfterClass
 	public void testgenepdf() {
-		driver.quit();
+		//driver.quit();
 		ConvertEx cv = new ConvertEx();
 		cv.Genratepdf();
 
@@ -489,7 +489,6 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "28", 28, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-	@Test(priority = 29)
 	public void ticketcustom() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -510,7 +509,7 @@ public class UserPaneTest extends BaseTestclass {
 		rc.startTestcase(Testcasename, "29", 29, Testcasedescription, TestCaseresult, "page  is  open");
 	}
 
-//	@Test(priority = 30)
+//@Test(priority = 30)
 	public void ticketcusto() throws EncryptedDocumentException, InvalidFormatException {
 		up = new UserPanel();
 		lp = new LoginPage();
@@ -660,7 +659,7 @@ public class UserPaneTest extends BaseTestclass {
 
 	}
 
-	@Test(priority = 104)
+	@Test(priority =1)
 	public void createtickettest() throws InterruptedException {
 
 		try {
@@ -673,8 +672,10 @@ public class UserPaneTest extends BaseTestclass {
 		Thread.sleep(3000);
 		up.sunewtab();
 
-		up.Createticket();
-		up.clickonsendmessagbtn();
+	//	up.Createticket();
+		up.Createticketplate2();
+		Thread.sleep(6000);
+	//	up.clickonsendmessagbtn();
 		String Testcasename = ReadExcel.readExcelCell(104, 1);
 		String Testcasedescription = ReadExcel.readExcelCell(104, 2);
 		String TestCaseresult = ReadExcel.readExcelCell(104, 3);
@@ -683,7 +684,7 @@ public class UserPaneTest extends BaseTestclass {
 
 	}
 
-	@Test(priority = 105)
+	
 	public void checkticketinadmin() throws EncryptedDocumentException, InvalidFormatException, InterruptedException {
 
 		up = new UserPanel();
@@ -724,4 +725,17 @@ public class UserPaneTest extends BaseTestclass {
 				"ticket has been found");
 
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

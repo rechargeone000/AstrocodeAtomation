@@ -34,7 +34,7 @@ public class videAstromani extends BaseTestclass {
 	HomePaget hm;
 	LoginPage lp;
 	videoaccesscheckpage vp = new videoaccesscheckpage();
-	int index  ;
+	int index;
 	String ExcelFilePath = System.getProperty("user.dir") + "\\src\\test\\resources\\data.xlsx";
 
 	@BeforeClass
@@ -60,7 +60,7 @@ public class videAstromani extends BaseTestclass {
 	}
 
 	@Test(dataProvider = "data-provider")
-	public void checkdatauseraccess( String email) throws InterruptedException {
+	public void checkdatauseraccess(String email) throws InterruptedException {
 		System.out.println(index);
 		String main = driver.getWindowHandle();
 		System.out.println("main..." + main);
@@ -75,8 +75,9 @@ public class videAstromani extends BaseTestclass {
 		// ..........................................section
 
 		driver.findElement(By.xpath("//div[@class='rounded-lg shadow-sm']//form")).click();
+		Thread.sleep(2000);
 
-		driver.findElement(By.xpath("(//span[@class=\"font-weight-500 font-14 text-dark-blue d-block\"])[2]")).click();
+		driver.findElement(By.xpath("(//span[@class='font-weight-500 font-14 text-dark-blue d-block'])[4]")).click();
 		Thread.sleep(10000);
 		try {
 			// WebElement frm = driver.findElement(By.xpath("//iframe[@loading='lazy']"));
@@ -141,6 +142,7 @@ public class videAstromani extends BaseTestclass {
 		for (int i = 0; i < topnum; i++) {
 
 			String topicname = topic.get(i).getText();
+			System.out.println(topicname);
 			String[] topvalue = topicname.split(" ");
 			System.out.println("value0f..i..." + i);
 			System.out.println(topvalue[0]);
@@ -182,7 +184,7 @@ public class videAstromani extends BaseTestclass {
 				.xpath("(//span[@class='font-weight-bold font-14 text-dark-blue d-block'])[" + sectionclickvalue + "]"))
 				.click();
 
-		driver.findElement(By.xpath("(//span[@class='chapter-icon bg-gray300 mr-10'])[36]")).click();
+		driver.findElement(By.xpath("(//span[@class='chapter-icon bg-gray300 mr-10'])[50]")).click();
 		Thread.sleep(7000);
 
 		try {
@@ -200,9 +202,9 @@ public class videAstromani extends BaseTestclass {
 			String Testcasename = email;
 			String Testcasedescription = paynowbtn;
 			String TestCaseresult = accessdenied;
-			
-			 index = index+1;
-			rc.startTestcase(Testcasename, srno,index , Testcasedescription, "pass", "page  is  open");
+
+			index = index + 1;
+			rc.startTestcase(Testcasename, srno, index, Testcasedescription, "pass", "page  is  open");
 
 		} catch (Exception e) {
 			System.out.println("video is playing");
@@ -265,7 +267,7 @@ public class videAstromani extends BaseTestclass {
 		// Totals rows count
 		String fileName = System.getProperty("user.dir") + "\\src\\test\\resources\\Seleniumreport.xlsx";
 
-		String sheetName = "Login";
+		String sheetName = "Ashtromani";
 
 		String[][] data = null;
 

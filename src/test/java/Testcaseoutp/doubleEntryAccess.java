@@ -99,7 +99,7 @@ public class doubleEntryAccess extends BaseTestclass {
 			for (int j = n + 1; j < size; j++) {
 
 				if (data1[n].equals(data1[j])) {
-					if (data1[j].startsWith("Astro Shiromani")) {
+					if (data1[j].startsWith("Astromani")) {
 						System.out.println("......double...." + data1[j]);
 
 						ReadExcel rc = new ReadExcel();
@@ -179,7 +179,7 @@ public class doubleEntryAccess extends BaseTestclass {
 
 		String fileName = System.getProperty("user.dir") + "\\src\\test\\resources\\Seleniumreport.xlsx";
 
-		String sheetName = "shiromani";
+		String sheetName = "Ashtromani";
 
 		String[][] data = null;
 
